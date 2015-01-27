@@ -1,16 +1,52 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Movie Suggestions">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+    <!-- Search Bar -->
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" placeholder="Search">
+    </label>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+    <!-- Genre -->
+    <label class="item item-input">
+      <div class="input-label">Genre</div>
+      <select>
+        <option>Action + Adcenture</option>
+        <option>Comedy</option>
+        <option>Drama</option>
+        <option>Horror</option>
+        <option>Sci-fi</option>
+      </select>
+    </label>
+
+    <!-- Length -->
+    <label class="item item-input">
+      <div class="input-label">Length</div>
+      <select>
+        <option>< 90 minutes</option>
+        <option>90 to 120 minutes</option>
+        <option>120 to 150 minutes</option>
+        <option>150 to 180 minutes</option>
+        <option>> 180 minutes</option>
+      </select>
+    </label>
+
+    <!-- Year -->
+    <label class="item item-input">
+      <div class="input-label">Year</div>
+      <input type="year">
+    </label>
+
+    <!-- Available Services -->
+    <label class="item item-input">
+      <div class="input-label">Available Services</div>
+      <button class="button icon-left ion-social-youtube">Youtube</button>
+      <button class="button icon-left ion-social-vimeo">Vimeo</button>
+    </label>
+
+
+     <!-- Search Button -->
+    <button class="button button-full button-stable">
+      Search
+    </button>
   </ion-content>
 </ion-view>
