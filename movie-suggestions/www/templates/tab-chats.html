@@ -1,16 +1,93 @@
-<ion-view view-title="Chats">
-  <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+<link href="../css/style.css" rel="stylesheet">
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+<ion-view view-title="Movie Suggestions">
+  <ion-content>
+    <!-- Search Bar -->
+    <div>
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input id="suggestions-search-input" type="search" placeholder="">
+        <button class="button button-search button-light">
+          Search
+        </button>
+      </label>
+    </div>
+
+    <div class="item item-divider"></div>
+
+    <!-- Genre -->
+    <div>
+      <label class="item item-input">
+        <div class="input-label">Genre</div>
+      </label>
+    </div>
+
+    <div>
+      <ul class="list">
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Action + Adventure
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Comedy
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Drama
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Horror
+        </li>
+
+         <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Sci-fi
+        </li>
+      </ul>
+    </div>
+
+    <!-- Length -->
+    <div>
+      <label class="item item-input item-select">
+        <div class="input-label">Length</div>
+        <select>
+          <option>< 90 minutes</option>
+          <option>90 to 120 minutes</option>
+          <option>120 to 150 minutes</option>
+          <option>150 to 180 minutes</option>
+          <option>> 180 minutes</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Year -->
+    <div>
+      <label class="item item-input">
+        <div class="input-label">Year</div>
+        <input type="number" min='2000' max='2015'>
+      </label>
+    </div>
+
+     <!-- Search Button -->
+    <div>
+    <button class="button button-full button-stable">
+      Get Suggestions
+    </button>
+    </div>
   </ion-content>
 </ion-view>
