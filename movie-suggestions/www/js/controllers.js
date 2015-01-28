@@ -1,7 +1,11 @@
 angular.module('starter.controllers', [])
 
 .controller('MyListCtrl', function($scope, Movies) {
-    $scope.movies = Movies.all();
+  $scope.movies = Movies.all();
+})
+
+.controller('MyListDetailCtrl', function($scope, $stateParams, Movies) {
+  $scope.movie = Movies.get($stateParams.movieId);
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

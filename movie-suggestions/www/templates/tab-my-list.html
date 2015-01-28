@@ -2,7 +2,7 @@
 <ion-content class="padding">
 <div class="movie-grid-container">
   <!-- loop through each movie and display it as a custom grid item -->
-  <a ng-repeat="movie in movies" class="item movie-item" href="#">
+  <a ng-repeat="movie in movies" class="item movie-item" href="#/tab/my-list/{{movie.id}}">
     <img class="movie-item-poster" src="{{movie.poster}}">
     <h2 class="show-text">{{movie.title}}</h2>
     <p>{{movie.year}}</p>
