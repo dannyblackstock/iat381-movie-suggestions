@@ -21,9 +21,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-.item.movie-item * {
-	text-overflow: initial;
-	white-space: normal; 
+.movie-grid-container {
+  // to counter-act the margin left on each movie item
+  margin-left: -5%;
+}
+
+.item.movie-item {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+  margin-bottom: 5%;
+
+	& * {
+		text-overflow: initial;
+		white-space: normal;
+	}
 }
 
 .movie-item-poster {

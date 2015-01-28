@@ -124,6 +124,13 @@ angular.module('starter.services', [])
     genre: 'Comedy, Action, Drama',
     runtime: '145 minutes',
     poster: 'http://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg'
+  }, {
+    id: 4,
+    title: 'The Lord of the Rings: The Fellowship of the Ring',
+    year: 2001,
+    genre: 'Action, Drama',
+    runtime: '178 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
   }];
 
   return {

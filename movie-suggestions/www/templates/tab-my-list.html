@@ -1,51 +1,12 @@
 <ion-view view-title="My List">
-  <ion-content class="padding">
-  <!-- <ion-item class="item-avatar" ng-repeat="movie in movies" type="item-text-wrap" href="#/tab/friend/{{movie.id}}">
-        <img ng-src="{{movie.poster}}">
-        <h2>{{movie.title}}</h2>
-  </ion-item>
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
-        </div>
-      </div>
-    </div> -->
-    <div ng-repeat="movie in movies">
-      <div class="row" ng-if="$even">
-        <div class="col col-50">
-          <a class="item movie-item" href="#">
-            <img class="movie-item-poster" src="{{movie.poster}}">
-            <h2 class="show-text">{{movie.title}}</h2>
-            <p>{{movie.year}}</p>
-          </a>
-        </div>
-        <div class="col col-50">
-          <a class="item movie-item" href="#">
-            <img class="movie-item-poster" src="{{movies[$index + 1].poster}}">
-            <h2 class="show-text">{{movies[$index + 1].title}}</h2>
-            <p>{{movies[$index + 1].year}}</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </ion-content>
+<ion-content class="padding">
+<div class="movie-grid-container">
+  <!-- loop through each movie and display it as a custom grid item -->
+  <a ng-repeat="movie in movies" class="item movie-item" href="#">
+    <img class="movie-item-poster" src="{{movie.poster}}">
+    <h2 class="show-text">{{movie.title}}</h2>
+    <p>{{movie.year}}</p>
+  </a>
+</div>
+</ion-content>
 </ion-view>
