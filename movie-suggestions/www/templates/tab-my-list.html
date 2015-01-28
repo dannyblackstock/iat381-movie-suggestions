@@ -1,6 +1,10 @@
 <ion-view view-title="My List">
   <ion-content class="padding">
-    <!-- <div class="list card">
+  <!-- <ion-item class="item-avatar" ng-repeat="movie in movies" type="item-text-wrap" href="#/tab/friend/{{movie.id}}">
+        <img ng-src="{{movie.poster}}">
+        <h2>{{movie.title}}</h2>
+  </ion-item>
+    <div class="list card">
       <div class="item item-divider">Recent Updates</div>
       <div class="item item-body">
         <div>
@@ -24,37 +28,24 @@
         </div>
       </div>
     </div> -->
-    <div class="row">
-      <div class="col .col-50">
-        <a class="item movie-item" href="#">
-          <img src="cover.jpg">
-          <h2 class="show-text">Napoleon Dynamite</h2>
-          <p>2007</p>
-        </a>
-      </div>
-      <div class="col .col-50">
-        <a class="item movie-item" href="#">
-          <img src="cover.jpg">
-          <h2 class="show-text">300</h2>
-          <p>2007</p>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col .col-50">
-        <a class="item movie-item" href="#">
-          <img src="cover.jpg">
-          <h2 class="show-text">Napoleon Dynamite</h2>
-          <p>2007</p>
-        </a>
-      </div>
-      <div class="col .col-50">
-        <a class="item movie-item" href="#">
-          <img src="cover.jpg">
-          <h2 class="show-text">300</h2>
-          <p>2007</p>
-        </a>
+    <div ng-repeat="movie in movies">
+      <div class="row" ng-if="$even">
+        <div class="col col-50">
+          <a class="item movie-item" href="#">
+            <img src="{{movie.poster}}">
+            <h2 class="show-text">{{movie.title}}</h2>
+            <p>{{movie.year}}</p>
+          </a>
+        </div>
+        <div class="col col-50">
+          <a class="item movie-item" href="#">
+            <img src="{{movies[$index + 1].poster}}">
+            <h2 class="show-text">{{movies[$index + 1].title}}</h2>
+            <p>{{movies[$index + 1].year}}</p>
+          </a>
+        </div>
       </div>
     </div>
+
   </ion-content>
 </ion-view>

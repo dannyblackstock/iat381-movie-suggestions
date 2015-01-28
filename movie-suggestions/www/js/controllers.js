@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('MyListCtrl', function($scope) {})
+.controller('MyListCtrl', function($scope, Movies) {
+    $scope.movies = Movies.all();
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
