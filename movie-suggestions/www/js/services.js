@@ -109,21 +109,21 @@ angular.module('starter.services', [])
     year: 2004,
     genre: 'Comedy',
     runtime: '96 minutes',
-    poster: 'http://ia.media-imdb.com/images/M/MV5BNjYwNTA3MDIyMl5BMl5BanBnXkFtZTYwMjIxNjA3._V1_SX300.jpg'
+    poster: 'http://upload.wikimedia.org/wikipedia/en/8/87/Napoleon_dynamite_post.jpg'
   }, {
     id: 1,
     title: '300',
     year: 2006,
     genre: 'Action',
     runtime: '117 minutes',
-    poster: 'http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg'
+    poster: 'http://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg'
   }, {
     id: 3,
     title: 'Forrest Gump',
     year: 1994,
     genre: 'Comedy, Action, Drama',
     runtime: '145 minutes',
-    poster: 'http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg'
+    poster: 'http://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg'
   }];
 
   return {

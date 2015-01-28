@@ -7018,3 +7018,6 @@ a.button {
 .item.movie-item * {
   text-overflow: initial;
   white-space: normal; }
+
+.movie-item-poster {
+  max-width: 100%; }

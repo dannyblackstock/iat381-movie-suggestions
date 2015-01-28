@@ -32,14 +32,14 @@
       <div class="row" ng-if="$even">
         <div class="col col-50">
           <a class="item movie-item" href="#">
-            <img src="{{movie.poster}}">
+            <img class="movie-item-poster" src="{{movie.poster}}">
             <h2 class="show-text">{{movie.title}}</h2>
             <p>{{movie.year}}</p>
           </a>
         </div>
         <div class="col col-50">
           <a class="item movie-item" href="#">
-            <img src="{{movies[$index + 1].poster}}">
+            <img class="movie-item-poster" src="{{movies[$index + 1].poster}}">
             <h2 class="show-text">{{movies[$index + 1].title}}</h2>
             <p>{{movies[$index + 1].year}}</p>
           </a>
