@@ -7030,3 +7030,6 @@ a.button {
 
 .movie-item-poster {
   max-width: 100%; }
+
+#suggestions-search-input {
+  flex: 1 0 150px; }
