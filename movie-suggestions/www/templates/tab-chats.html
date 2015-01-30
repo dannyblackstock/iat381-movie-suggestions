@@ -6,10 +6,10 @@
     <div>
       <label class="item item-input">
         <i class="icon ion-search placeholder-icon"></i>
-        <input id="suggestions-search-input" type="search" placeholder="">
-        <button class="button button-search button-light">
+        <input id="suggestions-search-input" type="search" placeholder="" ng-model="search.searchTerm">
+        <a href="#/tab/search?q={{search.searchTerm}}"class="button button-search button-light">
           Search
-        </button>
+        </a>
       </label>
     </div>
 
