@@ -8,17 +8,18 @@ angular.module('starter.controllers', [])
   $scope.movie = Movies.get($stateParams.movieId);
 })
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  var _searchTerm = 'Brian';
+.controller('SuggestCtrl', function($scope, Movies) {
+  // var _searchTerm = 'Brian';
 
-  $scope.search = {
-    searchTerm: _searchTerm
-  };
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  }
+  // $scope.search = {
+  //   searchTerm: _searchTerm
+  // };
+  $scope.searchTerm = Movies.searchTerm;
+  
+  $scope.movies = Movies.all();
+  // $scope.remove = function(chat) {
+  //   Chats.remove(chat);
+  // }
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

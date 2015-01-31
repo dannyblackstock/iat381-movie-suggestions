@@ -1,4 +1,4 @@
-<link href="../css/style.css" rel="stylesheet">
+<!-- <link href="../css/style.css" rel="stylesheet"> -->
 
 <ion-view view-title="Movie Suggestions">
   <ion-content>
@@ -6,13 +6,13 @@
     <div>
       <label class="item item-input">
         <i class="icon ion-search placeholder-icon"></i>
-        <input id="suggestions-search-input" type="search" placeholder="" ng-model="search.searchTerm">
-        <a href="#/tab/search?q={{search.searchTerm}}"class="button button-search button-light">
+        <input id="suggestions-search-input" type="search" placeholder="" ng-model="movies.searchTerm">
+        <button class="button button-search button-light">
           Search
-        </a>
+        </button>
       </label>
     </div>
-
+    {{movies.searchTerm}}
     <div class="item item-divider"></div>
 
     <!-- Genre -->

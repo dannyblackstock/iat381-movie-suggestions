@@ -133,6 +133,8 @@ angular.module('starter.services', [])
     poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
   }];
 
+  var searchTerm = "";
+
   return {
     all: function() {
       return movies;
@@ -140,6 +142,9 @@ angular.module('starter.services', [])
     get: function(moviesId) {
       // Simple index lookup
       return movies[moviesId];
+    },
+    searchTerm: function() {
+      return searchTerm;
     }
   }
 });
