@@ -66,6 +66,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+  .state('tab.suggest-search', {
+      url: '/suggest/search',
+      views: {
+        'tab-suggest': {
+          templateUrl: 'templates/tab-search.html',
+          controller: 'SuggestCtrl'
+        }
+      }
+    })
     // .state('tab.chat-detail', {
     //   url: '/chats/:chatId',
     //   views: {
