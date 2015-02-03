@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
   $scope.movies = Movies.all();
 })
 
-.controller('MyListDetailCtrl', function($scope, $stateParams, Movies) {
+.controller('MovieDetailCtrl', function($scope, $stateParams, Movies) {
   $scope.movie = Movies.get($stateParams.movieId);
 })
 

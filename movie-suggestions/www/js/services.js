@@ -118,14 +118,14 @@ angular.module('starter.services', [])
     runtime: '117 minutes',
     poster: 'http://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg'
   }, {
-    id: 3,
+    id: 2,
     title: 'Forrest Gump',
     year: 1994,
     genre: 'Comedy, Action, Drama',
     runtime: '145 minutes',
     poster: 'http://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg'
   }, {
-    id: 4,
+    id: 3,
     title: 'The Lord of the Rings: The Fellowship of the Ring',
     year: 2001,
     genre: 'Action, Drama',
