@@ -108,32 +108,38 @@ angular.module('starter.services', [])
     title: 'Napoleon Dynamite',
     year: 2004,
     genre: 'Comedy',
-    runtime: '96 minutes',
+    runtime: 96,
     poster: 'http://upload.wikimedia.org/wikipedia/en/8/87/Napoleon_dynamite_post.jpg'
   }, {
     id: 1,
     title: '300',
     year: 2006,
     genre: 'Action',
-    runtime: '117 minutes',
+    runtime: 117,
     poster: 'http://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg'
   }, {
     id: 2,
     title: 'Forrest Gump',
     year: 1994,
     genre: 'Comedy, Action, Drama',
-    runtime: '145 minutes',
+    runtime: 145,
     poster: 'http://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg'
   }, {
     id: 3,
     title: 'The Lord of the Rings: The Fellowship of the Ring',
     year: 2001,
     genre: 'Action, Drama',
-    runtime: '178 minutes',
+    runtime: 178,
     poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
   }];
 
   var searchTerm = "";
+
+  var filters = {
+      genre: "",
+      runtime: 0,
+      year: 0
+  };
 
   return {
     all: function() {
@@ -145,6 +151,9 @@ angular.module('starter.services', [])
     },
     searchTerm: function() {
       return searchTerm;
+    },
+    filters: function() {
+      return filters;
     }
   }
 });

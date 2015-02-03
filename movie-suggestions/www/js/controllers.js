@@ -14,8 +14,9 @@ angular.module('starter.controllers', [])
   // $scope.search = {
   //   searchTerm: _searchTerm
   // };
-  $scope.searchTerm = Movies.searchTerm;
-  
+  $scope.searchTerm = Movies.searchTerm();
+  $scope.filters = Movies.filters();
+
   $scope.movies = Movies.all();
   // $scope.remove = function(chat) {
   //   Chats.remove(chat);
