@@ -133,12 +133,28 @@ angular.module('starter.services', [])
     poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
   }];
 
+  var genres = [{
+    name: 'Action'
+  }, {
+    name: 'Adventure'
+  }, {
+    name: 'Comedy'
+  }, {
+    name: 'Drama'
+  }, {
+    name: 'Horror'
+  }, {
+    name: 'Sci-fi'
+  }];
+
   var searchTerm = "";
 
   var filters = {
       genre: "",
-      runtime: 0,
-      year: 0
+      runtimeMin: 0,
+      runtimeMax: 90,
+      yearMin: 0,
+      yearMax: 2016
   };
 
   return {
@@ -148,6 +164,9 @@ angular.module('starter.services', [])
     get: function(moviesId) {
       // Simple index lookup
       return movies[moviesId];
+    },
+    genres: function() {
+      return genres;
     },
     searchTerm: function() {
       return searchTerm;

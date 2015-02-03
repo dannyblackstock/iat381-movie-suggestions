@@ -8,7 +8,7 @@ angular.module('starter.controllers', [])
   $scope.movie = Movies.get($stateParams.movieId);
 })
 
-.controller('SuggestCtrl', function($scope, Movies) {
+.controller('SuggestCtrl', function($scope, $filter, Movies) {
   // var _searchTerm = 'Brian';
 
   // $scope.search = {
@@ -16,8 +16,17 @@ angular.module('starter.controllers', [])
   // };
   $scope.searchTerm = Movies.searchTerm();
   $scope.filters = Movies.filters();
-
+  $scope.genres = Movies.genres();
   $scope.movies = Movies.all();
+
+  $scope.selectedGenres = function () {
+    var selectedGenres = $filter('filter')($scope.genres, {checked: true});
+    $scope.filters.genre = selectedGenres;
+  }
+
+  $scope.randomMovie = function () {
+
+  }
   // $scope.remove = function(chat) {
   //   Chats.remove(chat);
   // }

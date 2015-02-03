@@ -75,6 +75,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.suggest-result', {
+      url: '/suggest/suggest-result',
+      views: {
+        'tab-suggest': {
+          templateUrl: 'templates/tab-movie-detail.html',
+          controller: 'SuggestCtrl'
+        }
+      }
+    })
   .state('tab.suggest-search-detail', {
     url: '/suggest/movie/:movieId',
     views: {
