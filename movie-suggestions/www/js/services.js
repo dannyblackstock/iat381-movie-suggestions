@@ -105,30 +105,14 @@ angular.module('starter.services', [])
   // Some fake testing data
   var movies = [{
     id: 0,
-    title: 'Napoleon Dynamite',
-    year: 2004,
-    director: 'Jared Hess',
-    genre: 'Comedy',
-    runtime: '96 minutes',
-    poster: 'http://upload.wikimedia.org/wikipedia/en/8/87/Napoleon_dynamite_post.jpg'
+    title: 'Blind Company',
+    year: 2009,
+    director: 'Alkinos Tsilimidos',
+    genre: 'Drama',
+    runtime: '98 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Blind_Company.jpg/420px-Blind_Company.jpg'
   }, {
     id: 1,
-    title: '300',
-    year: 2006,
-    director: 'Zach Snyder',
-    genre: 'Action',
-    runtime: '117 minutes',
-    poster: 'http://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg'
-  }, {
-    id: 2,
-    title: 'The Lord of the Rings: The Fellowship of the Ring',
-    year: 2001,
-    director: 'Peter Jackson',
-    genre: 'Action, Drama',
-    runtime: '178 minutes',
-    poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
-  }, {
-    id: 3,
     title: 'Drive',
     year: 2011,
     director: 'Nicolas Winding Refn',
@@ -136,13 +120,29 @@ angular.module('starter.services', [])
     runtime: '100 minutes',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg'
   }, {
-    id: 4,
+    id: 2,
+    title: '999',
+    year: 2010,
+    director: 'Marina Kunarova',
+    genre: 'Drama',
+    runtime: '91 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Film_999%2C_2010.jpg/418px-Film_999%2C_2010.jpg'
+  }, {
+    id: 3,
     title: 'Crawl',
     year: 2011,
     director: 'Paul China',
     genre: 'Crime, Thriller',
     runtime: '100 minutes',
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/324px-CRAWL_A_2011_Australian_horror_film.jpg'
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/405px-CRAWL_A_2011_Australian_horror_film.jpg'
+  }, {
+    id: 4,
+    title: 'Bathory',
+    year: 2008,
+    director: 'Juraj Jakubisko',
+    genre: 'Drama',
+    runtime: '140 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bathory_poster.JPG/425px-Bathory_poster.JPG'
   }, {
     id: 5,
     title: 'Amsterdam Express',
@@ -188,7 +188,7 @@ angular.module('starter.services', [])
     title: 'Condition',
     year: 2011,
     director: 'Andrei Severny',
-    genre: 'Drama, Mystery, Sci-fi',
+    genre: 'Drama, Sci-fi',
     runtime: '70 minutes',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg'
   }, {
@@ -214,8 +214,11 @@ angular.module('starter.services', [])
     director: 'Carlos Agullo',
     genre: 'Documentary, Thriller',
     runtime: '84 minutes',
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg'
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg',
+    seen: true,
+    myList: false
   }];
+
 
   return {
     all: function() {
@@ -224,6 +227,12 @@ angular.module('starter.services', [])
     get: function(moviesId) {
       // Simple index lookup
       return movies[moviesId];
+    },
+    addMovie: function() {
+      return: addMovie;
+    },
+    addMovieToSeen: function(moviesId) {
+      movies[moviesId].myList = false;
     }
   }
 });
