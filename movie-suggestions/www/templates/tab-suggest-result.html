@@ -64,7 +64,7 @@ The Friends service returns an array of friend data
       </div>
       <div class="row" ng-show="suggestedMovie.title && suggestedMovie.seen">
         <div class="col">
-          <button class="button button-block button-assertive">
+          <button ng-click="suggestedMovie.seen = !suggestedMovie.seen" class="button button-block button-assertive">
             <i class="icon ion-close"></i>
             I've havent seen this movie
           </button>
