@@ -21,21 +21,35 @@ angular.module('starter.controllers', [])
 
   $scope.randomMovieId = {value: 0};
   $scope.selectedMovieLength = [0,999];
-  $scope.selectedYear = {value: null};
+  $scope.selectedYear = {value: ""};
 
   $scope.changeSelectedGenres = function () {
     var selectedGenres = $filter('filter')($scope.genres, {checked: true});
     $scope.filters.genre = selectedGenres;
   }
 
+  $scope.changeYearRange = function () {
+    $scope.filters.yearRange = [$scope.selectedYear.value, $scope.selectedYear.value];
+  }
+
   $scope.changeSuggestedMovie = function () {
     $scope.randomMovieId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
   }
 
+  $scope.movieSuggestFilter = function(movie) {
+    // check if there are any genre filters applied
+    if ($scope.filters.genre[0] != null){
 
-  $scope.changeYearRange = function () {
-    $scope.filters.yearRange = [$scope.selectedYear.value, $scope.selectedYear.value];
-  }
+      for (var i =0; i < $scope.filters.genre.length; i++) {
+        // check if the current movie has any of the genres used in the filter
+        if (movie.genre.indexOf($scope.filters.genre[i].name) > -1) {
+          console.log($scope.filters.genre[i].name);
+          return true;
+        }
+      }
+    };
+  };
+
   // $scope.remove = function(chat) {
   //   Chats.remove(chat);
   // }

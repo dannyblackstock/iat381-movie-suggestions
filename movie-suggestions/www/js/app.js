@@ -79,7 +79,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/suggest/suggest-result',
       views: {
         'tab-suggest': {
-          templateUrl: 'templates/tab-movie-detail.html',
+          templateUrl: 'templates/tab-suggest-result.html',
           controller: 'SuggestCtrl'
         }
       }

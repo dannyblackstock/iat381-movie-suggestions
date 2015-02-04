@@ -86,13 +86,13 @@
     <div>
       <label class="item item-input">
         <div class="input-label">Year</div>
-        <input ng-model="selectedYear.value" ng-change="changeYearRange()" type="number" min="2000" max="2016">
+        <input ng-model="selectedYear.value" ng-change="changeYearRange()" type="tel" min="2000" max="2016">
       </label>
     </div>
     {{filters.yearRange}}
      <!-- Search Button -->
     <div>
-    <a href="#/tab/suggest/movie/{{randomMovieId.value}}" ng-click="changeSuggestedMovie()" class="button button-full button-stable">
+    <a href="#/tab/suggest/suggest-result" ng-click="changeSuggestedMovie()" class="button button-full button-stable">
       Suggest a movie
     </a>
     </div>

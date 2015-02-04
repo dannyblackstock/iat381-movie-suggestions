@@ -1,0 +1,10 @@
+<ion-view view-title="My List">
+<ion-content class="padding">
+<div class="movie-grid-container">
+  <!-- loop through each movie and display it as a custom grid item -->
+  <a ng-repeat="movie in movies | filter:movieSuggestFilter" class="item">
+    {{movie.title}}{{filters.genre}}
+  </a>
+</div>
+</ion-content>
+</ion-view>

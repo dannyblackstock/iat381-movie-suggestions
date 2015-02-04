@@ -150,9 +150,9 @@ angular.module('starter.services', [])
   var searchTerm = "";
 
   var filters = {
-      genre: "",
+      genre: [],
       runtimeRange: [0,999],
-      yearRange: [0,2016]
+      yearRange: ["",""]
   };
 
   return {
