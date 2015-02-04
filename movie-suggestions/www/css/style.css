@@ -1,4 +1,17 @@
 /* Empty. Add your own CSS if you like */
-.h3 {
-	font-size: 1em;
+/* Suggestions Page */
+.item-checkbox-right {
+	float: right;
+}
+
+.text-padding-top {
+	padding: 0.75rem;
+}
+
+.type-align {
+	text-align: right;
+}
+
+.label-align {
+	position: fixed;
 }

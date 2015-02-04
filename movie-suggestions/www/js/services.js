@@ -109,6 +109,7 @@ angular.module('starter.services', [])
     year: 2009,
     genre: 'Drama',
     runtime: '98 minutes',
+    director: 'Alkinos Tsilimidos',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Blind_Company.jpg/420px-Blind_Company.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -117,6 +118,7 @@ angular.module('starter.services', [])
     year: 2011,
     genre: 'Crime, Thriller',
     runtime: '100 minutes',
+    director: 'Nicolas Winding Refn',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -125,6 +127,7 @@ angular.module('starter.services', [])
     year: 2010,
     genre: 'Drama',
     runtime: '91 minutes',
+    director: 'Marina Kunarova',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Film_999%2C_2010.jpg/418px-Film_999%2C_2010.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -133,6 +136,7 @@ angular.module('starter.services', [])
     year: 2011,
     genre: 'Crime, Thriller',
     runtime: '100 minutes',
+    director: 'Paul China',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/405px-CRAWL_A_2011_Australian_horror_film.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -141,6 +145,7 @@ angular.module('starter.services', [])
     year: 2008,
     genre: 'Drama',
     runtime: '140 minutes',
+    director: 'Juraj Jakubisko',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bathory_poster.JPG/425px-Bathory_poster.JPG',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -149,6 +154,7 @@ angular.module('starter.services', [])
     year: 2014,
     genre: 'Drama',
     runtime: '107 minutes',
+    director: 'Fatmir Koç',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -157,6 +163,7 @@ angular.module('starter.services', [])
     year: 2014,
     genre: 'Horror, Thriller',
     runtime: '58 minutes',
+    director: 'Qazi Abrar',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -165,6 +172,7 @@ angular.module('starter.services', [])
     year: 2009,
     genre: 'Adventure, Documentary',
     runtime: '70 minutes',
+    director: 'David Kiern',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -173,6 +181,7 @@ angular.module('starter.services', [])
     year: 2011,
     genre: 'Drama',
     runtime: '125 minutes',
+    director: 'Sanjeewa Pushpakumara',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -181,6 +190,7 @@ angular.module('starter.services', [])
     year: 2013,
     genre: 'Documentary',
     runtime: '128 minutes',
+    director: 'Russell Scott',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -189,6 +199,7 @@ angular.module('starter.services', [])
     year: 2011,
     genre: 'Drama, Sci-fi',
     runtime: '70 minutes',
+    director: 'Andrei Severny',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -197,6 +208,7 @@ angular.module('starter.services', [])
     year: 2007,
     genre: 'Documentary',
     runtime: '80 minutes',
+    director: 'Gary Hustwit',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -205,6 +217,7 @@ angular.module('starter.services', [])
     year: 2013,
     genre: 'Documentary',
     runtime: '94 minutes',
+    director: 'Antonio Tublen',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
@@ -213,6 +226,7 @@ angular.module('starter.services', [])
     year: 2013,
     genre: 'Documentary, Thriller',
     runtime: '84 minutes',
+    director: 'Carlos Agulló',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg',
     plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }];

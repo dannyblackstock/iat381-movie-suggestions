@@ -7,10 +7,7 @@
     <div>
       <label class="item item-input">
         <i class="icon ion-search placeholder-icon"></i>
-        <input id="suggestions-search-input" type="search" placeholder="">
-        <button class="button button-light">
-          Search
-        </button>
+        <input id="suggestions-search-input" type="search" placeholder="Search">
       </label>
     </div> 
 
@@ -18,74 +15,78 @@
 
     <!-- Genre -->
     <div>
-      <label class="item item-input">
-        <div class="input-label">Genre</div>
-      </label>
-    </div>
-
-    <div>
       <ul class="list">
-        <li class="item item-checkbox">
-          <label class="checkbox">
-            <input type="checkbox">
-          </label>
-          Adventure
+        <li class="item">          
+          <div>
+            Genre
+          </div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox">
+        <li class="item">
+          <div class="checkbox item-checkbox-right">
             <input type="checkbox">
-          </label>
-          Comedy
+          </div>
+          <div class="text-padding-top">
+            Adventure
+          </div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox">
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
             <input type="checkbox">
           </label>
-          Crime
+          <div class="text-padding-top">Comedy</div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox">
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
             <input type="checkbox">
           </label>
-          Drama
+          <div class="text-padding-top">
+            Crime</div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox">
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
             <input type="checkbox">
           </label>
-          Documentary
+          <div class="text-padding-top">Drama</div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox">
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
             <input type="checkbox">
           </label>
-          Horror
+          <div class="text-padding-top">Documentary</div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox checkbox-right">
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
             <input type="checkbox">
           </label>
-          Sci-fi
+          <div class="text-padding-top">
+            Horror</div>
         </li>
 
-        <li class="item item-checkbox">
-          <label class="checkbox">
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
             <input type="checkbox">
           </label>
-          Thriller
+          <div class="text-padding-top">Sci-fi</div>
+        </li>
+
+        <li class="item">
+          <label class="checkbox item-checkbox-right">
+            <input type="checkbox">
+          </label>
+          <div class="text-padding-top">Thriller</div>
         </li>
       </ul>
     </div>
 
     <!-- Length -->
-    <div>
-      <label class="item item-input item-select">
+    <div class="item">
+      <label class="item-input item-select">
         <div class="input-label">Length</div>
         <select>
           <option>< 90 minutes</option>
@@ -98,19 +99,22 @@
     </div>
 
     <!-- Year -->
-    <div>
-      <label class="item item-input">
-        <div class="input-label">Year</div>
-        <input type="number" min='2006' max='2014'>
+    <div class="item">
+      <label class="item-input">
+        <div class="input-label label-align">Year</div>
+        <input class="type-align" type="number" min="2001" max="2014">
       </label>
     </div>
+   
+    <!-- Search Button -->
+    <div class="row">
+      <div class="col">
+      <button class="button button-block button-positive">
+        <i class="icon ion-film-marker"></i>
+        Get Suggestions
+      </button>
+      </div>
     </div>
-
-     <!-- Search Button -->
-    <div class="col">
-    <button class="button button-block button-stable">
-      Get Suggestions
-    </button>
-    </div>
+  </div>
   </ion-content>
 </ion-view>

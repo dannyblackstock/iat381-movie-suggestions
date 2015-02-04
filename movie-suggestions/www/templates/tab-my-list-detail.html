@@ -18,11 +18,13 @@ The Friends service returns an array of friend data
           <p>{{movie.year}}</p>
           <p>{{movie.runtime}}</p>
           <p>{{movie.genre}}</p>
+          <p><b>Director:</b> {{movie.director}}</p>
         </div>
       </div>
 
       <div class="col">
-        Plot<br>{{movie.plot}}
+        <p><b>Plot</b></p>
+        <p>{{movie.plot}}</p>
       </div>
 
       <div class="row">
@@ -43,7 +45,7 @@ The Friends service returns an array of friend data
 
       <div class="row">
         <div class="col">
-          <button class="button button-block">
+          <button class="button button-block button-positive">
             <i class="icon ion-eye"></i>
             Add to Watch List
           </button>
