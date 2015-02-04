@@ -104,34 +104,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     //   }
     // })
 
-  .state('tab.friends', {
-      url: '/friends',
+  .state('tab.seen', {
+      url: '/seen',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+        'tab-seen': {
+          templateUrl: 'templates/tab-seen.html',
+          controller: 'SeenCtrl'
         }
       }
     })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('tab.seen-detail', {
+      url: '/seen/movie/:movieId',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-seen': {
+          templateUrl: 'templates/tab-movie-detail.html',
+          controller: 'MovieDetailCtrl'
         }
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
-      }
-    }
-  });
+  // .state('tab.account', {
+  //   url: '/account',
+  //   views: {
+  //     'tab-account': {
+  //       templateUrl: 'templates/tab-account.html',
+  //       controller: 'AccountCtrl'
+  //     }
+  //   }
+  // });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/suggest');

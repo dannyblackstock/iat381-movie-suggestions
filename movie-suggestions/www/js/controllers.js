@@ -4,6 +4,10 @@ angular.module('starter.controllers', ['ionic'])
   $scope.movies = Movies.all();
 })
 
+.controller('SeenCtrl', function($scope, Movies) {
+  $scope.movies = Movies.all();
+})
+
 .controller('MovieDetailCtrl', function($scope, $stateParams, Movies) {
   $scope.movie = Movies.get($stateParams.movieId);
 
@@ -104,8 +108,10 @@ angular.module('starter.controllers', ['ionic'])
       }
       // console.log("movieMatchesYear: "+movieMatchesYear);
 
+      // make sure the user hasn't seen the movie yet
+      var seen = $scope.movies[i].seen;
       // if it fits all the filter criteria, add it to the potential choices
-      if (movieMatchesGenre && movieMatchesRuntime && movieMatchesYear) {
+      if (movieMatchesGenre && movieMatchesRuntime && movieMatchesYear && !seen) {
         potentialSuggestions.push($scope.movies[i]);
       }
     }
