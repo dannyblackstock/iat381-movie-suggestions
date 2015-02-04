@@ -7023,7 +7023,9 @@ a.button {
   display: inline-block;
   vertical-align: top;
   margin-left: 5%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  padding: 5px;
+  border: 0; }
   .item.movie-item * {
     text-overflow: initial;
     white-space: normal; }
