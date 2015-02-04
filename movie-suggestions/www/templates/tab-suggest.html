@@ -20,7 +20,7 @@
         <div class="input-label">Genre</div>
       </label>
     </div>
-    {{filters}}
+    <!-- {{filters}} -->
     <div>
       <ul class="list">
         <li ng-repeat="genre in genres" class="item item-checkbox">
@@ -81,18 +81,18 @@
         </select>
       </label>
     </div>
-    {{filters.runtimeRange}}
-    <!-- Year -->
+<!--     {{filters.runtimeRange}}
+ -->    <!-- Year -->
     <div>
       <label class="item item-input">
         <div class="input-label">Year</div>
         <input ng-model="selectedYear.value" ng-change="changeYearRange()" type="tel" min="2000" max="2016">
       </label>
     </div>
-    {{filters.yearRange}}
+    <!-- {{filters.yearRange}} -->
      <!-- Search Button -->
     <div>
-    {{potentialSuggestions}}
+    <!-- {{potentialSuggestions}} -->
     <a ng-href="#/tab/suggest/suggest-result" ng-click="suggestMovie()" class="button button-full button-stable">
       Suggest a movie
     </a>

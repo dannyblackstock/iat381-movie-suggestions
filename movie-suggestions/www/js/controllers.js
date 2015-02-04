@@ -96,10 +96,10 @@ angular.module('starter.controllers', [])
         potentialSuggestions.push($scope.movies[i]);
       }
     }
-    console.log(potentialSuggestions);
+    // console.log(potentialSuggestions);
 
+    // choose a random suggestion from the potential suggestions array
     var randomSuggestion = potentialSuggestions[Math.floor(Math.random() * potentialSuggestions.length)];
-
     // THE KEY TO MY MISERY setting the variable IN THE SERVICE AS WELL
     Movies.setSuggestedMovie(randomSuggestion);
   };
