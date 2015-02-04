@@ -52,11 +52,11 @@ The Friends service returns an array of friend data
 
       <div class="row" ng-show="suggestedMovie.title && suggestedMovie.myList">
         <div class="col">
-          <button class="button button-block button-balanced">
+          <button  ng-click="suggestedMovie.seen = true; suggestedMovie.myList = false" class="button button-block button-balanced">
             <i class="icon ion-checkmark"></i>
             I've seen this movie
           </button>
-          <button class="button button-block button-assertive">
+          <button  ng-click="suggestedMovie.myList = false; suggestedMovie.seen = false" class="button button-block button-assertive">
             <i class="icon ion-close"></i>
             Remove from Watch List
           </button>
@@ -64,7 +64,7 @@ The Friends service returns an array of friend data
       </div>
       <div class="row" ng-show="suggestedMovie.title && suggestedMovie.seen">
         <div class="col">
-          <button ng-click="suggestedMovie.seen = !suggestedMovie.seen" class="button button-block button-assertive">
+          <button ng-click="suggestedMovie.seen = false" class="button button-block button-assertive">
             <i class="icon ion-close"></i>
             I've havent seen this movie
           </button>
@@ -72,11 +72,11 @@ The Friends service returns an array of friend data
       </div>
       <div class="row" ng-show="suggestedMovie.title && !suggestedMovie.seen && !suggestedMovie.myList">
         <div class="col">
-          <button class="button button-block button-balanced">
+          <button ng-click="suggestedMovie.myList = true; suggestedMovie.seen = false" class="button button-block button-balanced">
             <i class="icon ion-eye"></i>
             Add to my watch list
           </button>
-          <button class="button button-block button-positive">
+          <button ng-click="suggestedMovie.seen = true; suggestedMovie.myList = false" class="button button-block button-positive">
             <i class="icon ion-checkmark"></i>
             I've seen this movie
           </button>
