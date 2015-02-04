@@ -105,116 +105,130 @@ angular.module('starter.services', [])
   // Some fake testing data
   var movies = [{
     id: 0,
-    title: 'Napoleon Dynamite',
-    year: 2004,
-    director: 'Jared Hess',
-    genre: 'Comedy',
-    runtime: 96,
-    poster: 'http://upload.wikimedia.org/wikipedia/en/8/87/Napoleon_dynamite_post.jpg'
+    title: 'Blind Company',
+    year: 2009,
+    genre: 'Drama',
+    runtime: 98,
+    director: 'Alkinos Tsilimidos',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Blind_Company.jpg/420px-Blind_Company.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 1,
-    title: '300',
-    year: 2006,
-    director: 'Zach Snyder',
-    genre: 'Action',
-    runtime: 117,
-    poster: 'http://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg'
-  }, {
-    id: 2,
-    title: 'The Lord of the Rings: The Fellowship of the Ring',
-    year: 2001,
-    director: 'Peter Jackson',
-    genre: 'Action, Drama',
-    runtime: 178,
-    poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
-  }, {
-    id: 3,
     title: 'Drive',
     year: 2011,
-    director: 'Nicolas Winding Refn',
-    genre: 'Crime, Thriller',
+    genre: 'Crime',
     runtime: 100,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg'
+    director: 'Nicolas Winding Refn',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
-    id: 4,
+    id: 2,
+    title: '999',
+    year: 2010,
+    genre: 'Drama',
+    runtime: 91,
+    director: 'Marina Kunarova',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Film_999%2C_2010.jpg/418px-Film_999%2C_2010.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+  }, {
+    id: 3,
     title: 'Crawl',
     year: 2011,
-    director: 'Paul China',
-    genre: 'Crime, Thriller',
+    genre: 'Crime',
     runtime: 100,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/324px-CRAWL_A_2011_Australian_horror_film.jpg'
+    director: 'Paul China',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/405px-CRAWL_A_2011_Australian_horror_film.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+  }, {
+    id: 4,
+    title: 'Bathory',
+    year: 2008,
+    genre: 'Drama',
+    runtime: 140,
+    director: 'Juraj Jakubisko',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bathory_poster.JPG/425px-Bathory_poster.JPG',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 5,
     title: 'Amsterdam Express',
     year: 2014,
-    director: 'Fatmir Koci',
     genre: 'Drama',
     runtime: 107,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg'
+    director: 'Fatmir Koç',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 6,
     title: 'Akela the Alone',
     year: 2014,
-    director: 'Abrar Qzai',
-    genre: 'Horror, Thriller',
+    genre: 'Horror',
     runtime: 58,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg'
+    director: 'Qazi Abrar',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 7,
     title: 'Journey to Everest',
     year: 2009,
-    director: 'David Kiern',
     genre: 'Adventure, Documentary',
     runtime: 70,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg'
+    director: 'David Kiern',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 8,
     title: 'Flying Fish',
     year: 2011,
-    director: 'Sanjeewa Pushpakumara',
     genre: 'Drama',
     runtime: 125,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg'
+    director: 'Sanjeewa Pushpakumara',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 9,
     title: 'Hidden Universe 3D',
     year: 2013,
-    director: 'Russell Scott',
     genre: 'Documentary',
     runtime: 128,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg'
+    director: 'Russell Scott',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 10,
     title: 'Condition',
     year: 2011,
-    director: 'Andrei Severny',
-    genre: 'Drama, Mystery, Sci-fi',
+    genre: 'Drama, Sci-fi',
     runtime: 70,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg'
+    director: 'Andrei Severny',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 11,
     title: 'Helvetica',
     year: 2007,
-    director: 'Gary Justwit',
     genre: 'Documentary',
     runtime: 80,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png'
+    director: 'Gary Hustwit',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 12,
     title: 'LFO',
     year: 2013,
-    director: 'Antonio Tublen',
     genre: 'Documentary',
     runtime: 94,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg'
+    director: 'Antonio Tublen',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }, {
     id: 13,
     title: 'Plot for Peace',
     year: 2013,
-    director: 'Carlos Agullo',
-    genre: 'Documentary, Thriller',
+    genre: 'Documentary',
     runtime: 84,
-    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg'
+    director: 'Carlos Agulló',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg',
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
   }];
 
   var genres = [{

@@ -6,32 +6,51 @@ The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{movie.title}}">
   <ion-content class="padding">
+    
     <div class="list card">
+      <div class="row">
+        <div class="col col-50 item item-image">
+          <img src="{{movie.poster}}">
+        </div>
 
-      <div class="item item-avatar">
-        <img ng-src="{{movie.poster}}">
-        <h2>{{movie.title}}</h2>
-        <p>{{movie.year}}</p>
+        <div class="col col-50">
+          <h4>{{movie.title}}</h4>
+          <p>{{movie.year}}</p>
+          <p>{{movie.runtime}}</p>
+          <p>{{movie.genre}}</p>
+          <p><b>Director:</b> {{movie.director}}</p>
+        </div>
       </div>
 
-      <div class="item item-image">
-        <img src="{{movie.poster}}">
+      <div class="col">
+        <p><b>Plot</b></p>
+        <p>{{movie.plot}}</p>
       </div>
 
-      <div class="button-col">
-      <a class="item item-icon-left assertive" href="#">
-        <i class="icon ion-social-youtube"></i>
-        Watch on Youtube
-      </a>
+      <div class="row">
+        <div class="col col-50">
+          <button class="button button-block button-assertive">
+            <i class="icon ion-social-youtube"></i>
+            Youtube
+          </button>
+        </div>
+
+        <div class="col col-50">
+          <button class="button button-block button-calm">
+            <i class="icon ion-social-vimeo"></i>
+            Vimeo
+          </button>
+        </div>
       </div>
 
-      <div class="button-col">
-      <a class="item item-icon-left calm" href="#">
-        <i class="icon ion-social-vimeo"></i>
-        Watch on Vimeo
-      </a>
+      <div class="row">
+        <div class="col">
+          <button class="button button-block button-positive">
+            <i class="icon ion-eye"></i>
+            Add to Watch List
+          </button>
+        </div>
       </div>
-
-    </div>
+  </div>
   </ion-content>
 </ion-view>

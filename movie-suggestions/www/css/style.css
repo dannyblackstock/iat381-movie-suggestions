@@ -1,1 +1,19 @@
 /* Empty. Add your own CSS if you like */
+/* Suggestions Page */
+.item-checkbox-right {
+	float: right;
+}
+
+.type-align {
+	text-align: right;
+}
+
+.label-align {
+	position: fixed;
+}
+
+.image-size {
+	width: 32px;
+	height: 32px;
+	text-align: left;
+}
