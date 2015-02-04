@@ -1,12 +1,11 @@
-<!-- <link href="../css/style.css" rel="stylesheet"> -->
-
 <ion-view view-title="Movie Suggestions">
   <ion-content>
+
     <!-- Search Bar -->
     <div>
       <label class="item item-input">
         <i class="icon ion-search placeholder-icon"></i>
-        <input id="suggestions-search-input" type="search" placeholder="" ng-model="movies.searchTerm">
+        <input id="suggestions-search-input" type="search" placeholder="Search" ng-model="movies.searchTerm">
         <a href="#/tab/suggest/search" class="button button-search button-light">
           Search
         </a>
@@ -29,6 +28,7 @@
             <input type="checkbox" ng-model="genre.checked" ng-change="changeSelectedGenres(); changeSuggestedMovie()">
           </label>
           {{genre.name}}
+          <img class="image-size" ng-src="../img/{{genre.name}}.svg">
         </li>
         <!-- <li class="item item-checkbox">
           <label class="checkbox">
@@ -93,7 +93,8 @@
      <!-- Search Button -->
     <div>
     <!-- {{potentialSuggestions}} -->
-    <a ng-href="#/tab/suggest/suggest-result" ng-click="suggestMovie()" class="button button-full button-stable">
+    <a ng-href="#/tab/suggest/suggest-result" ng-click="suggestMovie()" class="button button-full button-positive">
+      <i class="icon ion-film-marker"></i>
       Suggest a movie
     </a>
     </div>
