@@ -232,8 +232,6 @@ angular.module('starter.services', [])
   }];
 
   var genres = [{
-    name: 'Action'
-  }, {
     name: 'Adventure'
   }, {
     name: 'Comedy'
@@ -247,8 +245,6 @@ angular.module('starter.services', [])
     name: 'Horror'
   }, {
     name: 'Sci-fi'
-  }, {
-    name: 'Thriller'
   }];
 
   var searchTerm = "";
