@@ -151,10 +151,8 @@ angular.module('starter.services', [])
 
   var filters = {
       genre: "",
-      runtimeMin: 0,
-      runtimeMax: 90,
-      yearMin: 0,
-      yearMax: 2016
+      runtimeRange: [0,999],
+      yearRange: [0,2016]
   };
 
   return {

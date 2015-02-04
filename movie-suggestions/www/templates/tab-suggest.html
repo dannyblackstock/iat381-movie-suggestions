@@ -25,7 +25,8 @@
       <ul class="list">
         <li ng-repeat="genre in genres" class="item item-checkbox">
           <label class="checkbox">
-            <input type="checkbox" ng-model="genre.checked" ng-change="selectedGenres()">
+            <!-- TODO: change ng-click code to be one function in controller -->
+            <input type="checkbox" ng-model="genre.checked" ng-change="changeSelectedGenres(); changeSuggestedMovie()">
           </label>
           {{genre.name}}
         </li>
@@ -70,16 +71,17 @@
     <div>
       <label class="item item-input item-select">
         <div class="input-label">Length</div>
-        <select>
-          <option>< 90 minutes</option>
-          <option>90 to 120 minutes</option>
-          <option>120 to 150 minutes</option>
-          <option>150 to 180 minutes</option>
-          <option>> 180 minutes</option>
+        <select ng-model="filters.runtimeRange">
+          <option value="[0,999]">Any Length</option>
+          <option value="[0,90]">< 90 minutes</option>
+          <option value="[90,120]">90 to 120 minutes</option>
+          <option value="[120,150]">120 to 150 minutes</option>
+          <option value="[150,180]">150 to 180 minutes</option>
+          <option value="[180,999]"> 180 minutes</option>
         </select>
       </label>
     </div>
-
+    {{filters.runtimeRange}}
     <!-- Year -->
     <div>
       <label class="item item-input">
@@ -90,7 +92,7 @@
 
      <!-- Search Button -->
     <div>
-    <a href="#/tab/suggest/movie/{{randomMovieId}}" ng-click="randomMovie()" class="button button-full button-stable">
+    <a href="#/tab/suggest/movie/{{randomMovieId}}" ng-click="changeSuggestedMovie()" class="button button-full button-stable">
       Suggest a movie
     </a>
     </div>

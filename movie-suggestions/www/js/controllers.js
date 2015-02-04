@@ -18,14 +18,16 @@ angular.module('starter.controllers', [])
   $scope.filters = Movies.filters();
   $scope.genres = Movies.genres();
   $scope.movies = Movies.all();
-  $scope.randomMovieId = 0;
 
-  $scope.selectedGenres = function () {
+  $scope.randomMovieId = 0;
+  $scope.selectedMovieLength = [0,999];
+
+  $scope.changeSelectedGenres = function () {
     var selectedGenres = $filter('filter')($scope.genres, {checked: true});
     $scope.filters.genre = selectedGenres;
   }
 
-  $scope.randomMovie = function () {
+  $scope.changeSuggestedMovie = function () {
     $scope.randomMovieId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
   }
   // $scope.remove = function(chat) {
