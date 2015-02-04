@@ -92,7 +92,8 @@
     {{filters.yearRange}}
      <!-- Search Button -->
     <div>
-    <a href="#/tab/suggest/suggest-result" ng-click="changeSuggestedMovie()" class="button button-full button-stable">
+    {{potentialSuggestions}}
+    <a ng-href="#/tab/suggest/suggest-result" ng-click="movieSuggestFilter()" class="button button-full button-stable">
       Suggest a movie
     </a>
     </div>

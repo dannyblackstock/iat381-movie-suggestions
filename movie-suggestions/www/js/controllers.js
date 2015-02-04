@@ -8,7 +8,7 @@ angular.module('starter.controllers', [])
   $scope.movie = Movies.get($stateParams.movieId);
 })
 
-.controller('SuggestCtrl', function($scope, $filter, Movies) {
+.controller('SuggestCtrl', function($scope, $filter, $location, Movies) {
   // var _searchTerm = 'Brian';
 
   // $scope.search = {
@@ -18,10 +18,11 @@ angular.module('starter.controllers', [])
   $scope.filters = Movies.filters();
   $scope.genres = Movies.genres();
   $scope.movies = Movies.all();
+  $scope.potentialSuggestions = Movies.potentialSuggestions();
 
-  $scope.randomMovieId = {value: 0};
   $scope.selectedMovieLength = [0,999];
   $scope.selectedYear = {value: ""};
+
 
   $scope.changeSelectedGenres = function () {
     var selectedGenres = $filter('filter')($scope.genres, {checked: true});
@@ -37,55 +38,67 @@ angular.module('starter.controllers', [])
   }
 
   // function to generate random suggestion
-  $scope.movieSuggestFilter = function(movie) {
-    // only add this movie to the possibilities if it matches all input criteria
-    var movieMatchesGenre = false;
-    var movieMatchesRuntime = false;
-    var movieMatchesYear = false;
+  $scope.movieSuggestFilter = function() {
 
-    // check if there are any genre filters applied
-    if ($scope.filters.genre[0] != null){
-      for (var i =0; i < $scope.filters.genre.length; i++) {
-        // check if the current movie has any of the genres used in the filter
-        if (movie.genre.indexOf($scope.filters.genre[i].name) > -1) {
-          // console.log($scope.filters.genre[i].name);
-          movieMatchesGenre = true;
+    $scope.potentialSuggestions = [];
+
+    // loop through all the movies
+    for (i = 0; i < $scope.movies.length; i++) {
+      // only add this movie to the possibilities if it matches all input criteria
+      var movieMatchesGenre = false;
+      var movieMatchesRuntime = false;
+      var movieMatchesYear = false;
+
+      // check if there are any genre filters applied
+      if ($scope.filters.genre[0] != null){
+        for (var j =0; j < $scope.filters.genre.length; j++) {
+          // check if the current movie has any of the genres used in the filter
+          if ($scope.movies[i].genre.indexOf($scope.filters.genre[j].name) > -1) {
+            // console.log($scope.filters.genre[i].name);
+            movieMatchesGenre = true;
+          }
         }
       }
-    }
-    else {
-      movieMatchesGenre = true;
-    }
+      else {
+        movieMatchesGenre = true;
+      }
 
-    // parse the runtime range since it's actually a string in format "min,max"
-    var parsedRuntimeRange = JSON.parse("[" + $scope.filters.runtimeRange + "]");
-    if ((movie.runtime >= parsedRuntimeRange[0]) && (movie.runtime <= parsedRuntimeRange[1])) {
-      movieMatchesRuntime = true;
-    }
-    else {
-      movieMatchesRuntime = false;
-    }
-
-    // parse min and max year since theyre stored as an array of strings
-    var parsedMinYear = parseInt($scope.filters.yearRange[0]);
-    var parsedMaxYear = parseInt($scope.filters.yearRange[1]);
-    
-    console.log("parsedMinYear: "+parsedMinYear);
-
-    if (parsedMinYear && parsedMaxYear) {
-      if ((movie.year >= parsedMinYear) && (movie.year <= parsedMaxYear)) {
-        movieMatchesYear = true;
+      // parse the runtime range since it's actually a string in format "min,max"
+      var parsedRuntimeRange = JSON.parse("[" + $scope.filters.runtimeRange + "]");
+      if (($scope.movies[i].runtime >= parsedRuntimeRange[0]) && ($scope.movies[i].runtime <= parsedRuntimeRange[1])) {
+        movieMatchesRuntime = true;
       }
       else {
-        movieMatchesYear = false;
+        movieMatchesRuntime = false;
+      }
+
+      // parse min and max year since theyre stored as an array of strings
+      var parsedMinYear = parseInt($scope.filters.yearRange[0]);
+      var parsedMaxYear = parseInt($scope.filters.yearRange[1]);
+      
+      // console.log("parsedMinYear: "+parsedMinYear);
+      // check if the user entered a number
+      if (parsedMinYear && parsedMaxYear) {
+        if (($scope.movies[i].year >= parsedMinYear) && ($scope.movies[i].year <= parsedMaxYear)) {
+          movieMatchesYear = true;
+        }
+        else {
+          movieMatchesYear = false;
+        }
+      }
+      else {
+        movieMatchesYear = true;
+      }
+      // console.log("movieMatchesYear: "+movieMatchesYear);
+
+      // if it fits all the filter criteria, add it to the potential choices
+      if (movieMatchesGenre && movieMatchesRuntime && movieMatchesYear) {
+        $scope.potentialSuggestions.push($scope.movies[i]);
       }
     }
-    else {
-      movieMatchesYear = true;
-    }
-    console.log("movieMatchesYear: "+movieMatchesYear);
-
-    return (movieMatchesGenre && movieMatchesRuntime && movieMatchesYear);
+    console.log($scope.potentialSuggestions);
+    // THE KEY TO MY MISERY setting the variable IN THE SERVICE AS WELL
+    Movies.setPotentialSuggestions($scope.potentialSuggestions);
   };
 
   // $scope.remove = function(chat) {

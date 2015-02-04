@@ -1,11 +1,29 @@
-<ion-view view-title="Your suggestion">
-<ion-content class="padding">
-<div class="movie-grid-container">
-  <!-- loop through each movie and display it as a custom grid item -->
-  {{filters}}
-  <a ng-repeat="movie in movies | filter:movieSuggestFilter" class="item">
-    {{movie.title}} - {{movie.runtime}} minutes
-  </a>
-</div>
-</ion-content>
+<!--
+This template loads for the 'tab.my-list-detail' state (app.js)
+'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+The FriendsCtrl pulls data from the Friends service (service.js)
+The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{movie.title}}">
+  <ion-content class="padding">
+  {{potentialSuggestions}}
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img ng-src="{{movie.poster}}">
+        <h2>{{movie.title}}</h2>
+        <p>{{movie.year}}</p>
+      </div>
+
+      <div class="item item-image">
+        <img src="{{movie.poster}}">
+      </div>
+
+      <a class="item item-icon-left assertive" href="#">
+        <i class="icon ion-music-note"></i>
+        Start listening
+      </a>
+
+    </div>
+  </ion-content>
 </ion-view>
