@@ -1,0 +1,114 @@
+<link href="../css/style.css" rel="stylesheet">
+
+<ion-view view-title="Movie Suggestions">
+  <ion-content>
+    <!-- Search Bar -->
+    <div>
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input id="suggestions-search-input" type="search" placeholder="">
+        <button class="button button-light">
+          Search
+        </button>
+      </label>
+    </div>
+
+    <div class="item item-divider"></div>
+
+    <!-- Genre -->
+    <div>
+      <label class="item item-input">
+        <div class="input-label">Genre</div>
+      </label>
+    </div>
+
+    <div>
+      <ul class="list">
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Adventure
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Comedy
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Crime
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Drama
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Documentary
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Horror
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Sci-fi
+        </li>
+
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          Thriller
+        </li>
+      </ul>
+    </div>
+
+    <!-- Length -->
+    <div>
+      <label class="item item-input item-select">
+        <div class="input-label">Length</div>
+        <select>
+          <option>< 90 minutes</option>
+          <option>90 to 120 minutes</option>
+          <option>120 to 150 minutes</option>
+          <option>150 to 180 minutes</option>
+          <option>> 180 minutes</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Year -->
+    <div>
+      <label class="item item-input">
+        <div class="input-label">Year</div>
+        <input type="number" min='2000' max='2015'>
+      </label>
+    </div>
+
+     <!-- Search Button -->
+    <div>
+    <button class="button button-full button-stable">
+      Get Suggestions
+    </button>
+    </div>
+  </ion-content>
+</ion-view>

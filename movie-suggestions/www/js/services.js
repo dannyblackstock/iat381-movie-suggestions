@@ -107,6 +107,7 @@ angular.module('starter.services', [])
     id: 0,
     title: 'Napoleon Dynamite',
     year: 2004,
+    director: 'Jared Hess',
     genre: 'Comedy',
     runtime: 96,
     poster: 'http://upload.wikimedia.org/wikipedia/en/8/87/Napoleon_dynamite_post.jpg'
@@ -114,23 +115,106 @@ angular.module('starter.services', [])
     id: 1,
     title: '300',
     year: 2006,
+    director: 'Zach Snyder',
     genre: 'Action',
     runtime: 117,
     poster: 'http://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg'
   }, {
     id: 2,
-    title: 'Forrest Gump',
-    year: 1994,
-    genre: 'Comedy, Action, Drama',
-    runtime: 145,
-    poster: 'http://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg'
-  }, {
-    id: 3,
     title: 'The Lord of the Rings: The Fellowship of the Ring',
     year: 2001,
+    director: 'Peter Jackson',
     genre: 'Action, Drama',
     runtime: 178,
     poster: 'http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg'
+  }, {
+    id: 3,
+    title: 'Drive',
+    year: 2011,
+    director: 'Nicolas Winding Refn',
+    genre: 'Crime, Thriller',
+    runtime: '100 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg'
+  }, {
+    id: 4,
+    title: 'Crawl',
+    year: 2011,
+    director: 'Paul China',
+    genre: 'Crime, Thriller',
+    runtime: '100 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/324px-CRAWL_A_2011_Australian_horror_film.jpg'
+  }, {
+    id: 5,
+    title: 'Amsterdam Express',
+    year: 2014,
+    director: 'Fatmir Koci',
+    genre: 'Drama',
+    runtime: '107 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg'
+  }, {
+    id: 6,
+    title: 'Akela the Alone',
+    year: 2014,
+    director: 'Abrar Qzai',
+    genre: 'Horror, Thriller',
+    runtime: '58 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg'
+  }, {
+    id: 7,
+    title: 'Journey to Everest',
+    year: 2009,
+    director: 'David Kiern',
+    genre: 'Adventure, Documentary',
+    runtime: '70 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg'
+  }, {
+    id: 8,
+    title: 'Flying Fish',
+    year: 2011,
+    director: 'Sanjeewa Pushpakumara',
+    genre: 'Drama',
+    runtime: '125 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg'
+  }, {
+    id: 9,
+    title: 'Hidden Universe 3D',
+    year: 2013,
+    director: 'Russell Scott',
+    genre: 'Documentary',
+    runtime: '128 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg'
+  }, {
+    id: 10,
+    title: 'Condition',
+    year: 2011,
+    director: 'Andrei Severny',
+    genre: 'Drama, Mystery, Sci-fi',
+    runtime: '70 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg'
+  }, {
+    id: 11,
+    title: 'Helvetica',
+    year: 2007,
+    director: 'Gary Justwit',
+    genre: 'Documentary',
+    runtime: '80 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png'
+  }, {
+    id: 12,
+    title: 'LFO',
+    year: 2013,
+    director: 'Antonio Tublen',
+    genre: 'Documentary',
+    runtime: '94 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg'
+  }, {
+    id: 13,
+    title: 'Plot for Peace',
+    year: 2013,
+    director: 'Carlos Agullo',
+    genre: 'Documentary, Thriller',
+    runtime: '84 minutes',
+    poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg'
   }];
 
   var genres = [{
