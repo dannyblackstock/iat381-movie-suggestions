@@ -155,7 +155,7 @@ angular.module('starter.services', [])
       yearRange: ["",""]
   };
 
-  var potentialSuggestions = [];
+  var suggestedMovie = {};
 
   return {
     all: function() {
@@ -171,11 +171,11 @@ angular.module('starter.services', [])
     searchTerm: function() {
       return searchTerm;
     },
-    potentialSuggestions: function() {
-      return potentialSuggestions;
+    suggestedMovie: function() {
+      return suggestedMovie;
     },
-    setPotentialSuggestions: function(newPotentialSuggestions) {
-      potentialSuggestions = newPotentialSuggestions;
+    setSuggestedMovie: function(newSuggestedMovie) {
+      suggestedMovie = newSuggestedMovie;
     },
     filters: function() {
       return filters;

@@ -18,7 +18,7 @@ angular.module('starter.controllers', [])
   $scope.filters = Movies.filters();
   $scope.genres = Movies.genres();
   $scope.movies = Movies.all();
-  $scope.potentialSuggestions = Movies.potentialSuggestions();
+  $scope.suggestedMovie = Movies.suggestedMovie();
 
   $scope.selectedMovieLength = [0,999];
   $scope.selectedYear = {value: ""};
@@ -38,9 +38,9 @@ angular.module('starter.controllers', [])
   }
 
   // function to generate random suggestion
-  $scope.movieSuggestFilter = function() {
+  $scope.suggestMovie = function() {
 
-    $scope.potentialSuggestions = [];
+    var potentialSuggestions = [];
 
     // loop through all the movies
     for (i = 0; i < $scope.movies.length; i++) {
@@ -93,12 +93,15 @@ angular.module('starter.controllers', [])
 
       // if it fits all the filter criteria, add it to the potential choices
       if (movieMatchesGenre && movieMatchesRuntime && movieMatchesYear) {
-        $scope.potentialSuggestions.push($scope.movies[i]);
+        potentialSuggestions.push($scope.movies[i]);
       }
     }
-    console.log($scope.potentialSuggestions);
+    console.log(potentialSuggestions);
+
+    var randomSuggestion = potentialSuggestions[Math.floor(Math.random() * potentialSuggestions.length)];
+
     // THE KEY TO MY MISERY setting the variable IN THE SERVICE AS WELL
-    Movies.setPotentialSuggestions($scope.potentialSuggestions);
+    Movies.setSuggestedMovie(randomSuggestion);
   };
 
   // $scope.remove = function(chat) {
