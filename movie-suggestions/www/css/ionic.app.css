@@ -7033,3 +7033,18 @@ a.button {
 
 #suggestions-search-input {
   flex: 1 0 150px; }
+
+.item-checkbox-right {
+  float: right; }
+
+.type-align {
+  text-align: right; }
+
+.label-align {
+  position: fixed; }
+
+.image-size {
+  height: 23px;
+  float: right;
+  margin-top: -3px;
+  margin-bottom: 0; }
