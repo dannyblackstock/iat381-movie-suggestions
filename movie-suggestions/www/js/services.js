@@ -111,7 +111,9 @@ angular.module('starter.services', [])
     runtime: 98,
     director: 'Alkinos Tsilimidos',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Blind_Company.jpg/420px-Blind_Company.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 1,
     title: 'Drive',
@@ -120,7 +122,9 @@ angular.module('starter.services', [])
     runtime: 100,
     director: 'Nicolas Winding Refn',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 2,
     title: '999',
@@ -129,7 +133,9 @@ angular.module('starter.services', [])
     runtime: 91,
     director: 'Marina Kunarova',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Film_999%2C_2010.jpg/418px-Film_999%2C_2010.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 3,
     title: 'Crawl',
@@ -138,7 +144,9 @@ angular.module('starter.services', [])
     runtime: 100,
     director: 'Paul China',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/405px-CRAWL_A_2011_Australian_horror_film.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: true
   }, {
     id: 4,
     title: 'Bathory',
@@ -147,7 +155,9 @@ angular.module('starter.services', [])
     runtime: 140,
     director: 'Juraj Jakubisko',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bathory_poster.JPG/425px-Bathory_poster.JPG',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 5,
     title: 'Amsterdam Express',
@@ -156,7 +166,9 @@ angular.module('starter.services', [])
     runtime: 107,
     director: 'Fatmir Koç',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 6,
     title: 'Akela the Alone',
@@ -165,7 +177,9 @@ angular.module('starter.services', [])
     runtime: 58,
     director: 'Qazi Abrar',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 7,
     title: 'Journey to Everest',
@@ -174,7 +188,9 @@ angular.module('starter.services', [])
     runtime: 70,
     director: 'David Kiern',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: true,
+    seen: false
   }, {
     id: 8,
     title: 'Flying Fish',
@@ -183,7 +199,9 @@ angular.module('starter.services', [])
     runtime: 125,
     director: 'Sanjeewa Pushpakumara',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 9,
     title: 'Hidden Universe 3D',
@@ -192,7 +210,9 @@ angular.module('starter.services', [])
     runtime: 128,
     director: 'Russell Scott',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 10,
     title: 'Condition',
@@ -201,7 +221,9 @@ angular.module('starter.services', [])
     runtime: 70,
     director: 'Andrei Severny',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 11,
     title: 'Helvetica',
@@ -210,7 +232,9 @@ angular.module('starter.services', [])
     runtime: 80,
     director: 'Gary Hustwit',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 12,
     title: 'LFO',
@@ -219,7 +243,9 @@ angular.module('starter.services', [])
     runtime: 94,
     director: 'Antonio Tublen',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }, {
     id: 13,
     title: 'Plot for Peace',
@@ -228,7 +254,9 @@ angular.module('starter.services', [])
     runtime: 84,
     director: 'Carlos Agulló',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.'
+    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    myList: false,
+    seen: false
   }];
 
   var genres = [{
