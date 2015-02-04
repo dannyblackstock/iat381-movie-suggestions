@@ -41,6 +41,7 @@ angular.module('starter.controllers', [])
     // only add this movie to the possibilities if it matches all input criteria
     var movieMatchesGenre = false;
     var movieMatchesRuntime = false;
+    var movieMatchesYear = false;
 
     // check if there are any genre filters applied
     if ($scope.filters.genre[0] != null){
@@ -56,6 +57,7 @@ angular.module('starter.controllers', [])
       movieMatchesGenre = true;
     }
 
+    // parse the runtime range since it's actually a string in format "min,max"
     var parsedRuntimeRange = JSON.parse("[" + $scope.filters.runtimeRange + "]");
     if ((movie.runtime >= parsedRuntimeRange[0]) && (movie.runtime <= parsedRuntimeRange[1])) {
       movieMatchesRuntime = true;
@@ -64,7 +66,26 @@ angular.module('starter.controllers', [])
       movieMatchesRuntime = false;
     }
 
-    return (movieMatchesGenre && movieMatchesRuntime);
+    // parse min and max year since theyre stored as an array of strings
+    var parsedMinYear = parseInt($scope.filters.yearRange[0]);
+    var parsedMaxYear = parseInt($scope.filters.yearRange[1]);
+    
+    console.log("parsedMinYear: "+parsedMinYear);
+
+    if (parsedMinYear && parsedMaxYear) {
+      if ((movie.year >= parsedMinYear) && (movie.year <= parsedMaxYear)) {
+        movieMatchesYear = true;
+      }
+      else {
+        movieMatchesYear = false;
+      }
+    }
+    else {
+      movieMatchesYear = true;
+    }
+    console.log("movieMatchesYear: "+movieMatchesYear);
+
+    return (movieMatchesGenre && movieMatchesRuntime && movieMatchesYear);
   };
 
   // $scope.remove = function(chat) {
