@@ -8,7 +8,14 @@ The Friends service returns an array of friend data
   <ion-content class="padding">
     
     <div class="list card">
-      <div class="row">
+
+      <!-- show when no results -->
+      <div class="item item-divider" ng-hide="suggestedMovie.title">
+        Sorry!
+      </div>
+      <span class="item" ng-hide="suggestedMovie.title">We couldn't find any suggestions that meet your criteria!</span>
+
+      <div class="row" ng-show="suggestedMovie.title">
         <div class="col col-50 item item-image">
           <img ng-src="{{suggestedMovie.poster}}">
         </div>
@@ -22,12 +29,12 @@ The Friends service returns an array of friend data
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" ng-show="suggestedMovie.title">
         <p><b>Plot</b></p>
         <p>{{suggestedMovie.plot}}</p>
       </div>
 
-      <div class="row">
+      <div class="row" ng-show="suggestedMovie.title">
         <div class="col col-50">
           <button class="button button-block button-assertive">
             <i class="icon ion-social-youtube"></i>
@@ -43,11 +50,35 @@ The Friends service returns an array of friend data
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" ng-show="suggestedMovie.title && suggestedMovie.myList">
         <div class="col">
-          <button class="button button-block button-positive">
+          <button class="button button-block button-balanced">
+            <i class="icon ion-checkmark"></i>
+            I've seen this movie
+          </button>
+          <button class="button button-block button-assertive">
+            <i class="icon ion-close"></i>
+            Remove from Watch List
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-show="suggestedMovie.title && suggestedMovie.seen">
+        <div class="col">
+          <button class="button button-block button-assertive">
+            <i class="icon ion-close"></i>
+            I've havent seen this movie
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-show="suggestedMovie.title && !suggestedMovie.seen && !suggestedMovie.myList">
+        <div class="col">
+          <button class="button button-block button-balanced">
             <i class="icon ion-eye"></i>
-            Add to Watch List
+            Add to my watch list
+          </button>
+          <button class="button button-block button-positive">
+            <i class="icon ion-checkmark"></i>
+            I've seen this movie
           </button>
         </div>
       </div>
