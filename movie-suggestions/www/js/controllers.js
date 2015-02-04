@@ -36,18 +36,35 @@ angular.module('starter.controllers', [])
     $scope.randomMovieId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
   }
 
+  // function to generate random suggestion
   $scope.movieSuggestFilter = function(movie) {
+    // only add this movie to the possibilities if it matches all input criteria
+    var movieMatchesGenre = false;
+    var movieMatchesRuntime = false;
+
     // check if there are any genre filters applied
     if ($scope.filters.genre[0] != null){
-
       for (var i =0; i < $scope.filters.genre.length; i++) {
         // check if the current movie has any of the genres used in the filter
         if (movie.genre.indexOf($scope.filters.genre[i].name) > -1) {
-          console.log($scope.filters.genre[i].name);
-          return true;
+          // console.log($scope.filters.genre[i].name);
+          movieMatchesGenre = true;
         }
       }
-    };
+    }
+    else {
+      movieMatchesGenre = true;
+    }
+
+    var parsedRuntimeRange = JSON.parse("[" + $scope.filters.runtimeRange + "]");
+    if ((movie.runtime >= parsedRuntimeRange[0]) && (movie.runtime <= parsedRuntimeRange[1])) {
+      movieMatchesRuntime = true;
+    }
+    else {
+      movieMatchesRuntime = false;
+    }
+
+    return (movieMatchesGenre && movieMatchesRuntime);
   };
 
   // $scope.remove = function(chat) {
