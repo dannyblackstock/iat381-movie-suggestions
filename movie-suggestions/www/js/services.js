@@ -133,7 +133,7 @@ angular.module('starter.services', [])
     year: 2011,
     director: 'Nicolas Winding Refn',
     genre: 'Crime, Thriller',
-    runtime: '100 minutes',
+    runtime: 100,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg'
   }, {
     id: 4,
@@ -141,7 +141,7 @@ angular.module('starter.services', [])
     year: 2011,
     director: 'Paul China',
     genre: 'Crime, Thriller',
-    runtime: '100 minutes',
+    runtime: 100,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/324px-CRAWL_A_2011_Australian_horror_film.jpg'
   }, {
     id: 5,
@@ -149,7 +149,7 @@ angular.module('starter.services', [])
     year: 2014,
     director: 'Fatmir Koci',
     genre: 'Drama',
-    runtime: '107 minutes',
+    runtime: 107,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg'
   }, {
     id: 6,
@@ -157,7 +157,7 @@ angular.module('starter.services', [])
     year: 2014,
     director: 'Abrar Qzai',
     genre: 'Horror, Thriller',
-    runtime: '58 minutes',
+    runtime: 58,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg'
   }, {
     id: 7,
@@ -165,7 +165,7 @@ angular.module('starter.services', [])
     year: 2009,
     director: 'David Kiern',
     genre: 'Adventure, Documentary',
-    runtime: '70 minutes',
+    runtime: 70,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg'
   }, {
     id: 8,
@@ -173,7 +173,7 @@ angular.module('starter.services', [])
     year: 2011,
     director: 'Sanjeewa Pushpakumara',
     genre: 'Drama',
-    runtime: '125 minutes',
+    runtime: 125,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg'
   }, {
     id: 9,
@@ -181,7 +181,7 @@ angular.module('starter.services', [])
     year: 2013,
     director: 'Russell Scott',
     genre: 'Documentary',
-    runtime: '128 minutes',
+    runtime: 128,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg'
   }, {
     id: 10,
@@ -189,7 +189,7 @@ angular.module('starter.services', [])
     year: 2011,
     director: 'Andrei Severny',
     genre: 'Drama, Mystery, Sci-fi',
-    runtime: '70 minutes',
+    runtime: 70,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg'
   }, {
     id: 11,
@@ -197,7 +197,7 @@ angular.module('starter.services', [])
     year: 2007,
     director: 'Gary Justwit',
     genre: 'Documentary',
-    runtime: '80 minutes',
+    runtime: 80,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png'
   }, {
     id: 12,
@@ -205,7 +205,7 @@ angular.module('starter.services', [])
     year: 2013,
     director: 'Antonio Tublen',
     genre: 'Documentary',
-    runtime: '94 minutes',
+    runtime: 94,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg'
   }, {
     id: 13,
@@ -213,7 +213,7 @@ angular.module('starter.services', [])
     year: 2013,
     director: 'Carlos Agullo',
     genre: 'Documentary, Thriller',
-    runtime: '84 minutes',
+    runtime: 84,
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg'
   }];
 
@@ -224,11 +224,17 @@ angular.module('starter.services', [])
   }, {
     name: 'Comedy'
   }, {
+    name: 'Crime'
+  }, {
     name: 'Drama'
+  }, {
+    name: 'Documentary'
   }, {
     name: 'Horror'
   }, {
     name: 'Sci-fi'
+  }, {
+    name: 'Thriller'
   }];
 
   var searchTerm = "";
