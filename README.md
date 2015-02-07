@@ -1,30 +1,19 @@
-<<<<<<< HEAD
-References
-Genre Icons
-- Adventure
-- Comedy
-- Crime
-- Drama
-- Documentary
-- Horror
-- Sci-fi
-
-Created by Yi Chen from the Noun Project
-
-Skull icon created by Andrew Forrester from the Noun Project
-Gun icon created by Theresa Berens from the Noun Project
-=======
 Project Sources
-Icons
-Adventure - Created by Alex Fuller from the Noun Project
-Comedy - Created by Yi Chen from the Noun Project
-Crime -Created by Anton Gajdosik from the Noun Project
-Drama - Created by Yi Chen from the Noun Project
-Documentary - Created by Francisca Armas from the Noun Project
-Horror - Created by Yi Chen from the Noun Project
-Sci-fi - Created by Yi Chen from the Noun Project
+=========================== 
 
-Movie Posters
+Icons
+- Adventure - Created by Alex Fuller from the Noun Project
+- Comedy - Created by Yi Chen from the Noun Project
+- Crime -Created by Anton Gajdosik from the Noun Project
+- Drama - Created by Yi Chen from the Noun Project
+- Documentary - Created by Francisca Armas from the Noun Project
+- Horror - Created by Yi Chen from the Noun Project
+- Sci-fi - Created by Yi Chen from the Noun Project
+- Skull icon - Created by Andrew Forrester from the Noun Project
+- Gun icon - Created by Theresa Berens from the Noun Project
+
+**Movie Posters**  
+  
 Akela the Alone:
 http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg
 
@@ -62,4 +51,3 @@ http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P
 
 999:
 http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/405px-CRAWL_A_2011_Australian_horror_film.jpg
->>>>>>> Updated with project sources
