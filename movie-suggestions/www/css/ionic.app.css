@@ -7049,4 +7049,5 @@ a.button {
   height: 23px;
   float: right;
   margin-top: -3px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  opacity: 0.85; }

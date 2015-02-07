@@ -2,15 +2,13 @@
   <ion-content>
 
     <!-- Search Bar -->
-    <div>
+    <form ng-submit="searchSubmit()">
       <label class="item item-input">
         <i class="icon ion-search placeholder-icon"></i>
         <input id="suggestions-search-input" type="search" placeholder="Search" ng-model="movies.searchTerm">
-        <a href="#/tab/suggest/search" class="button button-search button-light">
-          Search
-        </a>
+        <input type="submit" vale="Search" class="button button-search button-light">
       </label>
-    </div>
+    </form>
     <div class="item item-divider"></div>
 
     <!-- Genre -->

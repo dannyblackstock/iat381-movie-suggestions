@@ -16,7 +16,7 @@ angular.module('starter.controllers', ['ionic'])
   $scope.addMovie = function () {
     $scope.movie.push($scope.movies);
     $scope.movie = '';
-  }
+  };
 })
 
 .controller('AddCtrl', function($scope, Movies) {
@@ -25,7 +25,7 @@ angular.module('starter.controllers', ['ionic'])
   $scope.movies = Movies.all();
 })
 
-.controller('SuggestCtrl', function($scope, $filter, $location, Movies) {
+.controller('SuggestCtrl', function($scope, $filter, $location, $state, Movies) {
   // var _searchTerm = 'Brian';
 
   // $scope.search = {
@@ -40,19 +40,22 @@ angular.module('starter.controllers', ['ionic'])
   $scope.selectedMovieLength = [0,999];
   $scope.selectedYear = {value: ""};
 
+  $scope.searchSubmit = function () {
+    $state.go('tab.suggest-search');
+  };
 
   $scope.changeSelectedGenres = function () {
     var selectedGenres = $filter('filter')($scope.genres, {checked: true});
     $scope.filters.genre = selectedGenres;
-  }
+  };
 
   $scope.changeYearRange = function () {
     $scope.filters.yearRange = [$scope.selectedYear.value, $scope.selectedYear.value];
-  }
+  };
 
   $scope.changeSuggestedMovie = function () {
     $scope.randomMovieId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-  }
+  };
 
   // function to generate random suggestion
   $scope.suggestMovie = function() {

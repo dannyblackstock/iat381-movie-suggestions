@@ -21,7 +21,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+  // force tab bar to be on the bottom on android
+  $ionicConfigProvider.tabs.style("standard").position("bottom");
+  // force back chevron instead of arrow on android
+  $ionicConfigProvider.backButton.icon('ion-chevron-left');
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
