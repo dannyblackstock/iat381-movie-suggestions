@@ -45,8 +45,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	max-width: 100%;
 }
 
+// Search bar inputs
 #suggestions-search-input {
-  flex: 1 0 150px;
+  flex: 1 1 75%;
+}
+
+#suggestions-search-submit {
+  flex: 1 1 25%;
+  padding: 0;
+  margin-right: 5px;
 }
 
 // ----- Andrew's CSS ----- //
