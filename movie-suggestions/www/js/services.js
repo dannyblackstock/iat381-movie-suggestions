@@ -111,7 +111,9 @@ angular.module('starter.services', [])
     runtime: 98,
     director: 'Alkinos Tsilimidos',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Blind_Company.jpg/420px-Blind_Company.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'Geoff Brewster is seeing out his final days at the family isolated coastal shack - walking the beach and leaving tape-recorded confessions for his estranged wife, Sally. But when his Porsche driving nephew, Josh, arrives unannounced, a deadly game ensues that threatens to destroy both men. (Source IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=i4szksRTPDs',
+    vimeo: ' ',
     myList: false,
     seen: false
   }, {
@@ -122,7 +124,9 @@ angular.module('starter.services', [])
     runtime: 100,
     director: 'Nicolas Winding Refn',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Drive_%282011%29_poster.jpg/428px-Drive_%282011%29_poster.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'A mysterious Hollywood stuntman, mechanic and getaway driver lands himself in trouble when he helps out his neighbor. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=3UFCzUfYGyM',
+    vimeo: 'http://vimeo.com/51833852',
     myList: false,
     seen: false
   }, {
@@ -133,7 +137,9 @@ angular.module('starter.services', [])
     runtime: 91,
     director: 'Marina Kunarova',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Film_999%2C_2010.jpg/418px-Film_999%2C_2010.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'The picture reveals the problem of drug addiction in contemporary life. Drug addiction can be resisted by strong character young people while others lose everything: friends, love and life. Metiss is a talented rapper, who managed to overcome drug addiction, but paid high price for it losing the girl he loved. One day, he comes across Linda, a young woman whom he tries to save. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=ErkcO1W3xbA',
+    vimeo: ' ',
     myList: false,
     seen: false
   }, {
@@ -144,7 +150,9 @@ angular.module('starter.services', [])
     runtime: 100,
     director: 'Paul China',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/CRAWL_A_2011_Australian_horror_film.jpg/405px-CRAWL_A_2011_Australian_horror_film.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'A seedy bar owner hires a mysterious Croatian to commit murder, but a planned double-crossing backfires when a young waitress is taken hostage. A suspenseful, yet darkly humorous chain of events builds to a bloodcurdling climax. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=5sAMJKMJjHA',
+    vimeo: 'http://vimeo.com/26942328',
     myList: false,
     seen: true
   }, {
@@ -155,7 +163,9 @@ angular.module('starter.services', [])
     runtime: 140,
     director: 'Juraj Jakubisko',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bathory_poster.JPG/425px-Bathory_poster.JPG',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'Bathory is based on the legends surrounding the life and deeds of Countess Elizabeth Bathory known as the greatest murderess in the history of mankind. Contrary to popular belief, Elizabeth Bathory was a modern Renaissance woman who ultimately fell victim to mens aspirations for power and wealth. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=xapNQuP8J3M',
+    vimeo: 'http://vimeo.com/26019139',
     myList: false,
     seen: false
   }, {
@@ -166,7 +176,9 @@ angular.module('starter.services', [])
     runtime: 107,
     director: 'Fatmir Koç',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amsterdam_Express.jpg/423px-Amsterdam_Express.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'Albanian emigrant is precariously caught in Amsterdam among the promise and allure of the rich city, threats of ruthless drug dealers & sex traffickers. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=T5stRNgHiCI',
+    vimeo: 'http://vimeo.com/88469974',
     myList: false,
     seen: false
   }, {
@@ -177,7 +189,9 @@ angular.module('starter.services', [])
     runtime: 58,
     director: 'Qazi Abrar',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Akela_The_Alone.jpg/441px-Akela_The_Alone.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'A loner, whose parents died years ago, lives all alone doing petty jobs for survival. He meets Nadeem and Dawood and his whole life takes a turn to insanity. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=tHmnGerFVxM',
+    vimeo: ' ',
     myList: false,
     seen: false
   }, {
@@ -188,7 +202,9 @@ angular.module('starter.services', [])
     runtime: 70,
     director: 'David Kiern',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Everest_Theatrical_Poster_m.jpg/404px-Everest_Theatrical_Poster_m.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'An expedition to Everest Base Camp became a discovery of their greater purpose. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=tQgOSJfHg4A',
+    vimeo: 'http://vimeo.com/25041130',
     myList: true,
     seen: false
   }, {
@@ -199,7 +215,9 @@ angular.module('starter.services', [])
     runtime: 125,
     director: 'Sanjeewa Pushpakumara',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FLYING_FISH_-Teaser_Poster-5.jpg/424px-FLYING_FISH_-Teaser_Poster-5.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'The film weaves together three narratives set against the backdrop of the Sri Lankan Civil War. (Source: Wikipedia)',
+    youtube: 'https://www.youtube.com/watch?v=tT76t0MuWGI',
+    vimeo: ' ',
     myList: false,
     seen: false
   }, {
@@ -210,7 +228,9 @@ angular.module('starter.services', [])
     runtime: 128,
     director: 'Russell Scott',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg/414px-Poster_for_the_IMAX_3D_movie_Hidden_Universe.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'An extraordinary journey deep into space offering fresh insight into the origins and evolution of the universe. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=wivi6-Sgl1E',
+    vimeo: 'http://vimeo.com/94480167',
     myList: false,
     seen: false
   }, {
@@ -221,7 +241,9 @@ angular.module('starter.services', [])
     runtime: 70,
     director: 'Andrei Severny',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CONDITION-FilmPoster.jpg/405px-CONDITION-FilmPoster.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'Two women escaping a catastrophe look for salvation in sound and nature. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=sC2pyxJLTgE',
+    vimeo: 'https://vimeo.com/ondemand/condition/31320414',
     myList: false,
     seen: false
   }, {
@@ -232,7 +254,9 @@ angular.module('starter.services', [])
     runtime: 80,
     director: 'Gary Hustwit',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Helvetica_film_poster.png/388px-Helvetica_film_poster.png',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'A documentary about typography, graphic design, and global visual culture. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=t__AN6d8FWQ',
+    vimeo: 'http://vimeo.com/73809723',
     myList: false,
     seen: false
   }, {
@@ -243,7 +267,9 @@ angular.module('starter.services', [])
     runtime: 94,
     director: 'Antonio Tublen',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LFO_official_poster.jpg/419px-LFO_official_poster.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'LFO is a dark comedy/drama/Sci-Fi about a man who realizes that he can hypnotize with sound. He starts experimenting on his neighbors, where the abuse of power takes over and, eventually, severe consequences for mankind are at stake. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=9GG92c3TVyw',
+    vimeo: ' ',
     myList: false,
     seen: false
   }, {
@@ -254,7 +280,9 @@ angular.module('starter.services', [])
     runtime: 84,
     director: 'Carlos Agulló',
     poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/P4P_int_low.jpg/420px-P4P_int_low.jpg',
-    plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat aliquam ex, sed tempus ante scelerisque sed. In bibendum varius odio, ultricies commodo est. Sed id sapien faucibus, facilisis nunc eu, pellentesque magna. Vivamus et gravida eros, nec tempor ligula. Ut interdum ex nec nibh dapibus, dictum sodales urna mollis.',
+    plot: 'A documentary that reveals the untold story of apartheids fall, and the mysterious French businessman who was instrumental in Nelson Mandelas release from jail. (Source: IMDb)',
+    youtube: 'https://www.youtube.com/watch?v=trEB574W8Kc',
+    vimeo: ' ',
     myList: false,
     seen: false
   }];
