@@ -22,15 +22,13 @@ The Friends service returns an array of friend data
 
         <div class="col col-50">
           <h4>{{suggestedMovie.title}}</h4>
-          <p>{{suggestedMovie.year}}</p>
-          <p>{{suggestedMovie.runtime}}</p>
+          <p>{{suggestedMovie.year}}, {{suggestedMovie.runtime}} minutes</p>
           <p>{{suggestedMovie.genre}}</p>
-          <p><b>Director:</b> {{suggestedMovie.director}}</p>
+          <p>Directed by {{suggestedMovie.director}}</p>
         </div>
       </div>
 
-      <div class="col" ng-show="suggestedMovie.title">
-        <p><b>Plot</b></p>
+      <div class="col">
         <p>{{suggestedMovie.plot}}</p>
       </div>
 
