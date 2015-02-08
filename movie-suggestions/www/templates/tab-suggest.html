@@ -5,8 +5,8 @@
     <form ng-submit="searchSubmit()">
       <label class="item item-input">
         <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="Search" id="suggestions-search-input" ng-model="movies.searchTerm" >
-        <input type="submit" class="col button button-light" value="Search" id="suggestions-search-submit" >
+        <input type="search" placeholder="Search" ng-model="movies.searchTerm" >
+        <!-- <input type="submit" class="col button button-light" value="Search" id="suggestions-search-submit" > -->
       </label>
     </form>
     <div class="item item-divider">
@@ -23,7 +23,7 @@
     <div>
       <ul class="list">
         <li ng-repeat="genre in genres" class="item item-checkbox">
-          <label class="checkbox">
+          <label class="checkbox checkbox-balanced">
             <!-- TODO: change ng-click code to be one function in controller -->
             <input type="checkbox" ng-model="genre.checked" ng-change="changeSelectedGenres(); changeSuggestedMovie()">
           </label>
