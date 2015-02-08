@@ -34,17 +34,17 @@ The Friends service returns an array of friend data
 
       <div class="row" ng-show="suggestedMovie.title">
         <div class="col col-50">
-          <button class="button button-block button-assertive">
+          <a href="{{suggestedMovie.youtube}}" class="button button-block button-assertive" target="_blank">
             <i class="icon ion-social-youtube"></i>
-            <a>Youtube</a>
-          </button>
+            Youtube
+          </a>
         </div>
 
         <div class="col col-50">
-          <button class="button button-block button-calm">
+          <a href="{{suggestedMovie.vimeo}}" class="button button-block button-calm" target="_blank">
             <i class="icon ion-social-vimeo"></i>
             Vimeo
-          </button>
+          </a>
         </div>
       </div>
 
