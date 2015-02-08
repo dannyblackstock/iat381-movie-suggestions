@@ -63,6 +63,15 @@ angular.module('starter.controllers', ['ionic'])
     $scope.randomMovieId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
   };
 
+  // function used to parse the data stored as the selected filter year range
+  $scope.yearRangeArray = function () {
+    // parse min and max year since theyre stored as an array of strings
+    var res = $scope.filters.yearRange.split(";");
+    var parsedMinYear = parseInt(res[0]);
+    var parsedMaxYear = parseInt(res[1]);
+    return [parsedMinYear, parsedMaxYear];
+  };
+
   // function to generate random suggestion
   $scope.suggestMovie = function() {
 
@@ -98,15 +107,10 @@ angular.module('starter.controllers', ['ionic'])
         movieMatchesRuntime = false;
       }
 
-      // parse min and max year since theyre stored as an array of strings
-      var res = $scope.filters.yearRange.split(";");
-      var parsedMinYear = parseInt(res[0]);
-      var parsedMaxYear = parseInt(res[1]);
-      
       // console.log("parsedMinYear: "+parsedMinYear);
       // check if the user entered a number
-      if (parsedMinYear && parsedMaxYear) {
-        if (($scope.movies[i].year >= parsedMinYear) && ($scope.movies[i].year <= parsedMaxYear)) {
+      if ($scope.yearRangeArray()[0] && $scope.yearRangeArray()[1]) {
+        if (($scope.movies[i].year >= $scope.yearRangeArray()[0]) && ($scope.movies[i].year <= $scope.yearRangeArray()[1])) {
           movieMatchesYear = true;
         }
         else {
