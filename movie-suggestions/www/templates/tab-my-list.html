@@ -6,8 +6,16 @@
     <img class="movie-item-poster" ng-src="{{movie.poster}}">
     <h2 class="show-text">{{movie.title}}</h2>
     <p>{{movie.year}}</p>
-    <!-- Show if no results -->
   </a>
 </div>
+
+<!-- Show if no results -->
+<div class="card" ng-hide="(movies | filter:{myList:true}).length">
+  <div class="item item-divider">
+    Your list is empty!
+  </div>
+  <span class="item" ng-hide="suggestedMovie.title">Try searching or getting a suggestion.</span>
+</div>
+
 </ion-content>
 </ion-view>

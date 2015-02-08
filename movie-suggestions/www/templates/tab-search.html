@@ -11,7 +11,7 @@
 </div>
 
 <!-- Show if no results -->
-<div class="card" ng-show="movies.length" ng-hide="(movies | filter:movies.searchTerm).length">
+<div class="card" ng-hide="(movies | filter:movies.searchTerm).length">
   <div class="item item-divider">
     No results for '{{movies.searchTerm}}'
   </div>

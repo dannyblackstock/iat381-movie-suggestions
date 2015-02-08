@@ -1,15 +1,22 @@
 <ion-view view-title="Movies I've Seen">
 <ion-content class="padding">
+
 <div class="movie-grid-container">
-
-
   <!-- loop through each movie and display it as a custom grid item -->
   <a ng-repeat="movie in movies | filter:{seen:true}" class="item movie-item" href="#/tab/seen/movie/{{movie.id}}">
     <img class="movie-item-poster" ng-src="{{movie.poster}}">
     <h2 class="show-text">{{movie.title}}</h2>
     <p>{{movie.year}}</p>
   </a>
-  
 </div>
+
+<!-- Show if no results -->
+<div class="card" ng-hide="(movies | filter:{seen:true}).length">
+  <div class="item item-divider">
+    You haven't seen any movies!
+  </div>
+  <span class="item" ng-hide="suggestedMovie.title">Watch movies and click the "seen" button.</span>
+</div>
+
 </ion-content>
 </ion-view>
