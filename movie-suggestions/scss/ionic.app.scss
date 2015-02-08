@@ -72,6 +72,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   border-radius: 20px;
   height: 20px !important;
   background-image: none !important;
+  top: -8px !important;
 }
 
 .jslider .jslider-bg {
@@ -87,6 +88,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     background-image: none;
     background-color: #ccc;
   }
+}
+
+.jslider-label {
+  display: none;
 }
 
 // ----- Andrew's CSS ----- //

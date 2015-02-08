@@ -7053,7 +7053,8 @@ a.button {
   box-shadow: 0 0 2px black;
   border-radius: 20px;
   height: 20px !important;
-  background-image: none !important; }
+  background-image: none !important;
+  top: -8px !important; }
 
 .jslider .jslider-bg .v {
   background-image: none;
@@ -7064,6 +7065,9 @@ a.button {
 .jslider .jslider-bg .l {
   background-image: none;
   background-color: #ccc; }
+
+.jslider-label {
+  display: none; }
 
 .item-checkbox-right {
   float: right; }

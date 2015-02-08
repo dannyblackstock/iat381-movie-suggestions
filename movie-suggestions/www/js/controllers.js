@@ -41,8 +41,8 @@ angular.module('starter.controllers', ['ionic'])
   $scope.selectedYear = {value: ""};
 
   $scope.yearSliderOptions = {       
-      from: 1995,
-      to: 2015,
+      from: 2007,
+      to: 2014,
       step: 1,
     };
 
