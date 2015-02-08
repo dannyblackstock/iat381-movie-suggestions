@@ -16,7 +16,7 @@ angular.module('starter.controllers', ['ionic'])
   $scope.addMovie = function () {
     $scope.movie.push($scope.movies);
     $scope.movie = '';
-  }
+  };
 })
 
 .controller('AddCtrl', function($scope, Movies) {
@@ -25,7 +25,7 @@ angular.module('starter.controllers', ['ionic'])
   $scope.movies = Movies.all();
 })
 
-.controller('SuggestCtrl', function($scope, $filter, $location, Movies) {
+.controller('SuggestCtrl', function($scope, $filter, $location, $state, Movies) {
   // var _searchTerm = 'Brian';
 
   // $scope.search = {
@@ -40,19 +40,37 @@ angular.module('starter.controllers', ['ionic'])
   $scope.selectedMovieLength = [0,999];
   $scope.selectedYear = {value: ""};
 
+  $scope.yearSliderOptions = {       
+      from: 2007,
+      to: 2014,
+      step: 1,
+    };
+
+  $scope.searchSubmit = function () {
+    $state.go('tab.suggest-search');
+  };
 
   $scope.changeSelectedGenres = function () {
     var selectedGenres = $filter('filter')($scope.genres, {checked: true});
     $scope.filters.genre = selectedGenres;
-  }
+  };
 
   $scope.changeYearRange = function () {
     $scope.filters.yearRange = [$scope.selectedYear.value, $scope.selectedYear.value];
-  }
+  };
 
   $scope.changeSuggestedMovie = function () {
     $scope.randomMovieId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-  }
+  };
+
+  // function used to parse the data stored as the selected filter year range
+  $scope.yearRangeArray = function () {
+    // parse min and max year since theyre stored as an array of strings
+    var res = $scope.filters.yearRange.split(";");
+    var parsedMinYear = parseInt(res[0]);
+    var parsedMaxYear = parseInt(res[1]);
+    return [parsedMinYear, parsedMaxYear];
+  };
 
   // function to generate random suggestion
   $scope.suggestMovie = function() {
@@ -89,14 +107,10 @@ angular.module('starter.controllers', ['ionic'])
         movieMatchesRuntime = false;
       }
 
-      // parse min and max year since theyre stored as an array of strings
-      var parsedMinYear = parseInt($scope.filters.yearRange[0]);
-      var parsedMaxYear = parseInt($scope.filters.yearRange[1]);
-      
       // console.log("parsedMinYear: "+parsedMinYear);
       // check if the user entered a number
-      if (parsedMinYear && parsedMaxYear) {
-        if (($scope.movies[i].year >= parsedMinYear) && ($scope.movies[i].year <= parsedMaxYear)) {
+      if ($scope.yearRangeArray()[0] && $scope.yearRangeArray()[1]) {
+        if (($scope.movies[i].year >= $scope.yearRangeArray()[0]) && ($scope.movies[i].year <= $scope.yearRangeArray()[1])) {
           movieMatchesYear = true;
         }
         else {
