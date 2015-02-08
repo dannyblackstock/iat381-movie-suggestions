@@ -89,7 +89,8 @@
         <input class="type-align" ng-model="selectedYear.value" ng-change="changeYearRange()" type="tel" min="2000" max="2016">
       </label>
     </div>
-    <!-- {{filters.yearRange}} -->
+    <input ng-model="filters.yearRange" type="text" id="mySlider1" slider options="options" />
+    {{filters.yearRange}}
      <!-- Search Button -->
     <div>
     <!-- {{potentialSuggestions}} -->

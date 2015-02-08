@@ -280,7 +280,7 @@ angular.module('starter.services', [])
   var filters = {
       genre: [],
       runtimeRange: "0,999",
-      yearRange: ["",""]
+      yearRange: "0;2016"
   };
 
   var suggestedMovie = {};

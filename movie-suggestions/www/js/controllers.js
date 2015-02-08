@@ -40,6 +40,14 @@ angular.module('starter.controllers', ['ionic'])
   $scope.selectedMovieLength = [0,999];
   $scope.selectedYear = {value: ""};
 
+  $scope.value = "10;15";
+  $scope.options = {       
+      from: 0,
+      to: 2016,
+      step: 1,
+      dimension: " $"       
+    };
+
   $scope.searchSubmit = function () {
     $state.go('tab.suggest-search');
   };
