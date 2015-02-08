@@ -11,9 +11,9 @@ The Friends service returns an array of friend data
 
       <!-- show when no results -->
       <div class="item item-divider" ng-hide="suggestedMovie.title">
-        Sorry!
+        Couldn't find any suggestions!
       </div>
-      <span class="item" ng-hide="suggestedMovie.title">We couldn't find any suggestions that meet your criteria!</span>
+      <span class="item" ng-hide="suggestedMovie.title">Try using less specific filters.</span>
 
       <div class="row" ng-show="suggestedMovie.title">
         <div class="col col-50 item item-image">
@@ -28,7 +28,7 @@ The Friends service returns an array of friend data
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" ng-show="suggestedMovie.title">
         <p>{{suggestedMovie.plot}}</p>
       </div>
 
