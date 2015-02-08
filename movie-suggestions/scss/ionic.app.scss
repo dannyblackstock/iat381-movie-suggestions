@@ -56,6 +56,39 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   margin-right: 5px;
 }
 
+// overriding jslider stuff
+.jslider {
+  flex: 1 0 150px;
+  margin-right: 30px;
+}
+
+.jslider-value {
+  left: 50% !important;
+}
+
+.jslider-pointer {
+  background-color: white;
+  box-shadow: 0 0 2px black;
+  border-radius: 20px;
+  height: 20px !important;
+  background-image: none !important;
+}
+
+.jslider .jslider-bg {
+  .v {
+    background-image: none;
+    background-color: $balanced;
+  }
+  .r {
+    background-image: none;
+    background-color: #ccc;
+  }
+  .l {
+    background-image: none;
+    background-color: #ccc;
+  }
+}
+
 // ----- Andrew's CSS ----- //
 
 .item-checkbox-right {

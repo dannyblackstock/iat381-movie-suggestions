@@ -40,12 +40,10 @@ angular.module('starter.controllers', ['ionic'])
   $scope.selectedMovieLength = [0,999];
   $scope.selectedYear = {value: ""};
 
-  $scope.value = "10;15";
-  $scope.options = {       
-      from: 0,
-      to: 2016,
+  $scope.yearSliderOptions = {       
+      from: 1995,
+      to: 2015,
       step: 1,
-      dimension: " $"       
     };
 
   $scope.searchSubmit = function () {
@@ -101,8 +99,9 @@ angular.module('starter.controllers', ['ionic'])
       }
 
       // parse min and max year since theyre stored as an array of strings
-      var parsedMinYear = parseInt($scope.filters.yearRange[0]);
-      var parsedMaxYear = parseInt($scope.filters.yearRange[1]);
+      var res = $scope.filters.yearRange.split(";");
+      var parsedMinYear = parseInt(res[0]);
+      var parsedMaxYear = parseInt(res[1]);
       
       // console.log("parsedMinYear: "+parsedMinYear);
       // check if the user entered a number
