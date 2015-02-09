@@ -3,3 +3,8 @@
 .type-align {
 	text-align: right;
 }
+
+.spacing {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
