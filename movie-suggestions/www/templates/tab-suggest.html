@@ -51,7 +51,7 @@
  -->    <!-- Year -->
     <div>
       <label class="item item-input">
-        <div class="input-label">Year <span id="year-range">{{yearRangeArray()[0]}}-{{yearRangeArray()[1]}}</span></div>
+        <span class="spacing">Year<div class="input-label" id="year-range">{{yearRangeArray()[0]}}-{{yearRangeArray()[1]}}</div></span>
         <input ng-model="filters.yearRange" type="text" id="mySlider1" slider options="yearSliderOptions" />
         <!-- <input class="type-align" ng-model="selectedYear.value" ng-change="changeYearRange()" type="tel" min="2000" max="2016"> -->
       </label>
