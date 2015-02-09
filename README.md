@@ -1,16 +1,14 @@
 Project Sources
 =========================== 
 
-Icons
+**Icons**
 - Adventure - Created by Alex Fuller from the Noun Project
 - Comedy - Created by Yi Chen from the Noun Project
-- Crime -Created by Anton Gajdosik from the Noun Project
+- Crime -Created by Theresa Berens from the Noun Project
 - Drama - Created by Yi Chen from the Noun Project
 - Documentary - Created by Francisca Armas from the Noun Project
-- Horror - Created by Yi Chen from the Noun Project
-- Sci-fi - Created by Yi Chen from the Noun Project
-- Skull icon - Created by Andrew Forrester from the Noun Project
-- Gun icon - Created by Theresa Berens from the Noun Project
+- Horror - Created by Mila Redko from the Noun Project
+- Sci-fi - Created by Antonis Makriyannis from the Noun Project
 
 **Movie Posters**  
   
